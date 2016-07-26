@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--First-->
@@ -119,7 +120,62 @@
                     <view key="view" contentMode="scaleToFill" id="KIM-Vb-Xw3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Add Item to Garden" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LzP-be-8PY">
+                                <rect key="frame" x="20" y="64" width="560" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type of Plant" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fKg-L0-ivy">
+                                <rect key="frame" x="20" y="122" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date Planted" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uW3-bc-r7n">
+                                <rect key="frame" x="20" y="160" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Watered" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r6A-wm-OF3">
+                                <rect key="frame" x="20" y="198" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OyZ-oN-A7t">
+                                <rect key="frame" x="20" y="274" width="560" height="269"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="269" id="uxF-lM-jWZ"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Required Water per Week" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Ur-Cy-ZWl">
+                                <rect key="frame" x="20" y="236" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OyZ-oN-A7t" firstAttribute="leading" secondItem="5Ur-Cy-ZWl" secondAttribute="leading" id="20b-XD-wV5"/>
+                            <constraint firstItem="r6A-wm-OF3" firstAttribute="trailing" secondItem="KIM-Vb-Xw3" secondAttribute="trailingMargin" id="2Nd-yK-RTR"/>
+                            <constraint firstItem="r6A-wm-OF3" firstAttribute="leading" secondItem="KIM-Vb-Xw3" secondAttribute="leadingMargin" id="3T2-V5-XUf"/>
+                            <constraint firstItem="LzP-be-8PY" firstAttribute="top" secondItem="e1Q-bb-7bQ" secondAttribute="bottom" id="6gi-36-4Wd"/>
+                            <constraint firstItem="OyZ-oN-A7t" firstAttribute="trailing" secondItem="KIM-Vb-Xw3" secondAttribute="trailingMargin" id="6uZ-BH-ohM"/>
+                            <constraint firstItem="OyZ-oN-A7t" firstAttribute="trailing" secondItem="5Ur-Cy-ZWl" secondAttribute="trailing" id="6zC-w4-iCa"/>
+                            <constraint firstItem="qr4-yK-t22" firstAttribute="top" secondItem="OyZ-oN-A7t" secondAttribute="bottom" constant="8" symbolic="YES" id="D8R-XE-a0m"/>
+                            <constraint firstItem="OyZ-oN-A7t" firstAttribute="leading" secondItem="KIM-Vb-Xw3" secondAttribute="leadingMargin" id="ILF-MF-O8g"/>
+                            <constraint firstItem="fKg-L0-ivy" firstAttribute="trailing" secondItem="KIM-Vb-Xw3" secondAttribute="trailingMargin" id="JtK-LJ-mEv"/>
+                            <constraint firstItem="OyZ-oN-A7t" firstAttribute="top" secondItem="r6A-wm-OF3" secondAttribute="bottom" constant="8" id="Lv1-KZ-lMn"/>
+                            <constraint firstItem="uW3-bc-r7n" firstAttribute="leading" secondItem="KIM-Vb-Xw3" secondAttribute="leadingMargin" id="OIN-j3-kLS"/>
+                            <constraint firstItem="LzP-be-8PY" firstAttribute="leading" secondItem="KIM-Vb-Xw3" secondAttribute="leadingMargin" id="Oyf-ZR-8vr"/>
+                            <constraint firstItem="fKg-L0-ivy" firstAttribute="leading" secondItem="KIM-Vb-Xw3" secondAttribute="leadingMargin" id="TUT-RR-zL8"/>
+                            <constraint firstItem="uW3-bc-r7n" firstAttribute="top" secondItem="fKg-L0-ivy" secondAttribute="bottom" constant="8" id="XRd-3w-1r3"/>
+                            <constraint firstItem="fKg-L0-ivy" firstAttribute="top" secondItem="LzP-be-8PY" secondAttribute="bottom" constant="8" id="m0R-xX-Cvl"/>
+                            <constraint firstItem="uW3-bc-r7n" firstAttribute="trailing" secondItem="KIM-Vb-Xw3" secondAttribute="trailingMargin" id="rup-4O-eJ1"/>
+                            <constraint firstItem="r6A-wm-OF3" firstAttribute="top" secondItem="uW3-bc-r7n" secondAttribute="bottom" constant="8" id="vCJ-S7-NdP"/>
+                            <constraint firstItem="OyZ-oN-A7t" firstAttribute="top" secondItem="5Ur-Cy-ZWl" secondAttribute="bottom" constant="8" symbolic="YES" id="yMc-cP-x2s"/>
+                            <constraint firstItem="LzP-be-8PY" firstAttribute="trailing" secondItem="KIM-Vb-Xw3" secondAttribute="trailingMargin" id="ygH-Ha-kLR"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r9D-68-dTn" userLabel="First Responder" sceneMemberID="firstResponder"/>
