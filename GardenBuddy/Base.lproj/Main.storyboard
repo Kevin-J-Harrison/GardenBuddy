@@ -111,9 +111,29 @@
                     <view key="view" contentMode="scaleToFill" id="CoS-6Y-29Z">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAM-qs-vdW">
+                                <rect key="frame" x="213" y="285" width="156" height="30"/>
+                                <state key="normal" title="DatePlanted"/>
+                                <connections>
+                                    <action selector="dateButtonTouched:" destination="Ifd-DF-Yc3" eventType="touchUpInside" id="L0f-fm-Uyd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Jo-iq-0wc">
+                                <rect key="frame" x="213" y="323" width="156" height="30"/>
+                                <state key="normal" title="LastWatered"/>
+                                <connections>
+                                    <action selector="lastWateredButtonTouched:" destination="Ifd-DF-Yc3" eventType="touchUpInside" id="3rt-We-rQi"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="e7o-mO-Vnr"/>
+                    <connections>
+                        <outlet property="dateButton" destination="IAM-qs-vdW" id="Hvt-zp-mxS"/>
+                        <outlet property="lastWatered" destination="0Jo-iq-0wc" id="vdz-XL-XDT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sy8-1n-vu4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
