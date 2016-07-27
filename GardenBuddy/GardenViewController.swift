@@ -11,6 +11,7 @@ import UIKit
 class GardenViewController: UITableViewController {
     
     var myGarden = [Plant]()
+    let defaults = NSUserDefaults.standardUserDefaults()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,9 +29,6 @@ class GardenViewController: UITableViewController {
 )
         myGarden[1].currentWaterLevel = 25
         myGarden[2].currentWaterLevel = 0
-        
-        
-        
         
     }
     
@@ -50,23 +48,39 @@ class GardenViewController: UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "plantDetail" {
-            if let indexPath = self.tableView.indexPathForSelectedRow {
+            /*if let indexPath = self.tableView.indexPathForSelectedRow {
                 
                 let controller = (segue.destinationViewController as! UINavigationController).topViewController as! PlantDetailViewController
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
                 controller.navigationItem.leftItemsSupplementBackButton = true
-            }
+            }*/
         }
-        /*else if segue.identifier == "addItem" {
-                if let indexPath = self.tableView.indexPathForSelectedRow {
+        else if segue.identifier == "addItem" {
+                    print("add me")
+                    if let viewController = segue.destinationViewController as? AddPlantViewController {
+                        viewController.onDataAvailable = {[weak self]
+                            (data) in
+                            if let weakSelf = self {
+                                weakSelf.doSomethingWithData(data)
+                            }
+                        }
                     
-                    let controller = (segue.destinationViewController as! UINavigationController).topViewController as! PlantDetailViewController
-                    controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
-                    controller.navigationItem.leftItemsSupplementBackButton = true
+//                    let controller = (segue.destinationViewController as! UINavigationController).topViewController as! PlantDetailViewController
+//                    controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
+//                    controller.navigationItem.leftItemsSupplementBackButton = true
                 }
-        }*/
+        }
 
         
+    }
+    
+    func refreshView() {
+        self.tableView.reloadData()
+    }
+    
+    func doSomethingWithData(plant: Plant) {
+        myGarden.append(plant)
+        refreshView()
     }
 
     override func didReceiveMemoryWarning() {
