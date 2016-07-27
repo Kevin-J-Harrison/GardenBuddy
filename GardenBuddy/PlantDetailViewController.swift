@@ -16,6 +16,7 @@ class PlantDetailViewController: UIViewController {
         // Do any additional setup after loading the view.
        let cancelButton = UIBarButtonItem(barButtonSystemItem: .Cancel, target: self, action: #selector(cancel(_:)))
         self.navigationItem.leftBarButtonItem = cancelButton
+        setupView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,6 +24,9 @@ class PlantDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func setupView() {
+        self.view.backgroundColor = bgColorCode
+    }
 
     /*
     // MARK: - Navigation
