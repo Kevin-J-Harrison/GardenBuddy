@@ -57,14 +57,14 @@ class GardenViewController: UITableViewController {
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
         }
-        else if segue.identifier == "addItem" {
+        /*else if segue.identifier == "addItem" {
                 if let indexPath = self.tableView.indexPathForSelectedRow {
                     
                     let controller = (segue.destinationViewController as! UINavigationController).topViewController as! PlantDetailViewController
                     controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
                     controller.navigationItem.leftItemsSupplementBackButton = true
                 }
-        }
+        }*/
 
         
     }
@@ -74,9 +74,9 @@ class GardenViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    /*func insertNewObject(sender: AnyObject) {
+    func insertNewObject(sender: AnyObject) {
         
         self.performSegueWithIdentifier("addItem", sender: self)
-    }*/
+    }
 }
 
