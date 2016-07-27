@@ -9,12 +9,22 @@
 import UIKit
 
 class GardenViewController: UITableViewController {
-
+    
+    var myGarden = [Plant]()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(insertNewObject(_:)))
         self.navigationItem.rightBarButtonItem = addButton
+        
+        
+        //Hard coded test value
+        myGarden.append(Plant(maxWaterLevel: 20.0, type: "daisy", datePlanted: NSDate(), lastWatered: NSDate(), estHarvestDate: NSDate(), additionalInformation: "Information", vegetable: false))
+        
+        
+        
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -23,6 +33,9 @@ class GardenViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+
+        cell.textLabel!.text = myGarden[0].type
+        cell.detailTextLabel!.text = "Last Watered: \(myGarden[0].daysSinceWater()) days ago"
 
         
         return cell

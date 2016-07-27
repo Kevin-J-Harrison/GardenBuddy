@@ -14,11 +14,7 @@ class HomeScreenViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        var date = NSDate()
-        print (date.timeIntervalSince1970)
-        sleep(5)
-        date = NSDate()
-        print(date.timeIntervalSince1970)
+
         // Do any additional setup after loading the view, typically from a nib.
     }
     
