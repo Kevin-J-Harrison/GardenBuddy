@@ -18,6 +18,7 @@
 		335C3D1C1D480D6E002931E0 /* PlantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335C3D1B1D480D6E002931E0 /* PlantDetailViewController.swift */; };
 		335C3D1E1D481103002931E0 /* AddPlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335C3D1D1D481103002931E0 /* AddPlantViewController.swift */; };
 		335F08371D481F6700B97BAA /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335F08361D481F6700B97BAA /* Plant.swift */; };
+		33A839B91D493B650031ED21 /* gardenConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A839B81D493B650031ED21 /* gardenConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		335C3D1B1D480D6E002931E0 /* PlantDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantDetailViewController.swift; sourceTree = "<group>"; };
 		335C3D1D1D481103002931E0 /* AddPlantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlantViewController.swift; sourceTree = "<group>"; };
 		335F08361D481F6700B97BAA /* Plant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		33A839B81D493B650031ED21 /* gardenConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gardenConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				335C3CF61D48093E002931E0 /* LaunchScreen.storyboard */,
 				335C3CF91D48093E002931E0 /* Info.plist */,
 				335F08361D481F6700B97BAA /* Plant.swift */,
+				33A839B81D493B650031ED21 /* gardenConstants.swift */,
 			);
 			path = GardenBuddy;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				335C3D1E1D481103002931E0 /* AddPlantViewController.swift in Sources */,
+				33A839B91D493B650031ED21 /* gardenConstants.swift in Sources */,
 				335F08371D481F6700B97BAA /* Plant.swift in Sources */,
 				335C3CF01D48093E002931E0 /* GardenViewController.swift in Sources */,
 				335C3CEC1D48093E002931E0 /* AppDelegate.swift in Sources */,

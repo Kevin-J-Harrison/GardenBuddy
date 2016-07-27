@@ -12,7 +12,7 @@ class AddPlantViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = bgColorCode
         // Do any additional setup after loading the view.
     }
 

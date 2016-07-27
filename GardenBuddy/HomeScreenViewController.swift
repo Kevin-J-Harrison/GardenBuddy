@@ -12,14 +12,22 @@ import UIKit
 
 class HomeScreenViewController: UIViewController {
 
+    @IBOutlet weak var titleLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupView()
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
     
     
-
+    func setupView() {
+        self.view.backgroundColor = bgColorCode
+        self.titleLabel.backgroundColor = bgColorCode
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

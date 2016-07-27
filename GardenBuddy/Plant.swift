@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class Plant {
     
@@ -49,9 +50,29 @@ class Plant {
         }
     }
     
-    func daysSinceWater() -> Int {
-        //hard coded test value
-        return 2
+    func daysSinceWater() -> String {
+        let rightNow = NSDate()
+        
+        let daysSince = ((rightNow.timeIntervalSinceReferenceDate - datePlanted.timeIntervalSinceReferenceDate) / (60*60*24) )
+        
+        if Int(daysSince) == 1 {
+            return "Last Watered: 1 day ago"
+        }
+        else {
+            return "Last Watered: \(Int(daysSince)) days ago"
+        }
+    }
+    
+    func getCellColor() -> UIColor {
+        if currentWaterLevel < 10 {
+            return colorRed
+        }
+        else if currentWaterLevel < 30 {
+            return colorYellow
+        }
+        else {
+            return colorGreen
+        }
     }
     
 }
