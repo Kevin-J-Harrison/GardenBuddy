@@ -45,7 +45,7 @@ class AddPlantViewController: UIViewController, THDatePickerDelegate{
                            datePlanted: self.datePlanted,
                            lastWatered: self.lastWateredDate,
                            estHarvestDate: NSDate(),
-                           additionalInformation: "Information",
+                           additionalInformation: "Information Is Awesome!!!",
                            vegetable: (self.vegetableCheck.on == true ? true : false))
         self.sendData(aPlant)
         self.navigationController?.popViewControllerAnimated(true)
