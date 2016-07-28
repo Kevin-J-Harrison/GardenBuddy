@@ -283,39 +283,37 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OyZ-oN-A7t">
-                                <rect key="frame" x="20" y="312" width="560" height="149"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="149" id="XL7-c5-snv"/>
-                                </constraints>
-                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Estimated Weeks To Harvest" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7c1-Za-s5G">
+                                <rect key="frame" x="20" y="316" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="LzP-be-8PY" firstAttribute="leading" secondItem="KIM-Vb-Xw3" secondAttribute="leadingMargin" id="3uY-aY-rkp"/>
                             <constraint firstItem="lE7-iu-0oH" firstAttribute="trailing" secondItem="KIM-Vb-Xw3" secondAttribute="trailingMargin" id="6Dp-eT-xLz"/>
                             <constraint firstItem="4wc-0K-Yoy" firstAttribute="top" secondItem="lE7-iu-0oH" secondAttribute="bottom" constant="8" id="7fD-xU-S2I"/>
-                            <constraint firstItem="OyZ-oN-A7t" firstAttribute="trailing" secondItem="KIM-Vb-Xw3" secondAttribute="trailingMargin" id="FUe-hv-cVI"/>
                             <constraint firstItem="UFj-dG-ybG" firstAttribute="trailing" secondItem="KIM-Vb-Xw3" secondAttribute="trailingMargin" id="J2b-Tr-mEN"/>
+                            <constraint firstItem="7c1-Za-s5G" firstAttribute="top" secondItem="4k8-B1-91l" secondAttribute="bottom" constant="8" id="OUO-jB-y34"/>
                             <constraint firstItem="fKg-L0-ivy" firstAttribute="trailing" secondItem="KIM-Vb-Xw3" secondAttribute="trailingMargin" id="Pvo-Ft-lb5"/>
                             <constraint firstItem="4wc-0K-Yoy" firstAttribute="leading" secondItem="KIM-Vb-Xw3" secondAttribute="leadingMargin" id="RF5-v7-A2N"/>
-                            <constraint firstItem="qr4-yK-t22" firstAttribute="top" secondItem="OyZ-oN-A7t" secondAttribute="bottom" constant="90" id="VKw-cd-P7N"/>
                             <constraint firstItem="lE7-iu-0oH" firstAttribute="leading" secondItem="KIM-Vb-Xw3" secondAttribute="leadingMargin" id="WJd-qa-fqW"/>
                             <constraint firstItem="4k8-B1-91l" firstAttribute="leading" secondItem="4wc-0K-Yoy" secondAttribute="trailing" constant="8" id="aOQ-da-UeU"/>
                             <constraint firstItem="BG5-yD-TgX" firstAttribute="trailing" secondItem="KIM-Vb-Xw3" secondAttribute="trailingMargin" id="cJL-k9-XcW"/>
                             <constraint firstItem="LzP-be-8PY" firstAttribute="trailing" secondItem="KIM-Vb-Xw3" secondAttribute="trailingMargin" id="cuI-hW-6ZO"/>
                             <constraint firstItem="UFj-dG-ybG" firstAttribute="leading" secondItem="KIM-Vb-Xw3" secondAttribute="leadingMargin" id="daT-gd-e87"/>
+                            <constraint firstItem="7c1-Za-s5G" firstAttribute="leading" secondItem="KIM-Vb-Xw3" secondAttribute="leadingMargin" id="g0z-UL-z51"/>
                             <constraint firstItem="4k8-B1-91l" firstAttribute="trailing" secondItem="KIM-Vb-Xw3" secondAttribute="trailingMargin" id="i2m-rc-Moz"/>
                             <constraint firstItem="fKg-L0-ivy" firstAttribute="top" secondItem="LzP-be-8PY" secondAttribute="bottom" constant="8" id="ick-Tn-aQA"/>
                             <constraint firstItem="4k8-B1-91l" firstAttribute="top" secondItem="lE7-iu-0oH" secondAttribute="bottom" constant="8" id="rqQ-kS-DdD"/>
                             <constraint firstItem="BG5-yD-TgX" firstAttribute="leading" secondItem="KIM-Vb-Xw3" secondAttribute="leadingMargin" id="s2z-eX-45K"/>
                             <constraint firstItem="lE7-iu-0oH" firstAttribute="top" secondItem="UFj-dG-ybG" secondAttribute="bottom" constant="8" id="s5P-yJ-COH"/>
-                            <constraint firstItem="OyZ-oN-A7t" firstAttribute="top" secondItem="4wc-0K-Yoy" secondAttribute="bottom" constant="8" id="s7U-ox-Y8T"/>
                             <constraint firstItem="UFj-dG-ybG" firstAttribute="top" secondItem="BG5-yD-TgX" secondAttribute="bottom" constant="8" id="tKa-4l-Phr"/>
                             <constraint firstItem="fKg-L0-ivy" firstAttribute="leading" secondItem="KIM-Vb-Xw3" secondAttribute="leadingMargin" id="tXq-7G-d2b"/>
+                            <constraint firstItem="7c1-Za-s5G" firstAttribute="trailing" secondItem="KIM-Vb-Xw3" secondAttribute="trailingMargin" id="tzK-FC-Pjd"/>
                             <constraint firstItem="LzP-be-8PY" firstAttribute="top" secondItem="e1Q-bb-7bQ" secondAttribute="bottom" constant="8" id="wPc-Ml-FHk"/>
                             <constraint firstItem="BG5-yD-TgX" firstAttribute="top" secondItem="fKg-L0-ivy" secondAttribute="bottom" constant="8" id="wuD-Q6-qKb"/>
-                            <constraint firstItem="OyZ-oN-A7t" firstAttribute="leading" secondItem="KIM-Vb-Xw3" secondAttribute="leadingMargin" id="x2B-2u-14c"/>
                         </constraints>
                     </view>
                     <connections>
