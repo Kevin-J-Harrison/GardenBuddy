@@ -29,9 +29,9 @@ class GardenViewController: UITableViewController {
         self.navigationItem.leftBarButtonItem = self.editButtonItem()
         
         let longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(GardenViewController.longPress(_:)))
-        self.view.addGestureRecognizer(
-        
+        self.view.addGestureRecognizer(longPressRecognizer)
         self.myGarden = [myVegetables, myPlants]
+            
         self.ref = FIRDatabase.database().reference()
     }
     
