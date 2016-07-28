@@ -64,7 +64,13 @@ class HomeScreenViewController: UIViewController {
         
         if city != nil || state != nil {
             city = city!.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())!
-            requestURL = NSURL(string: "http://api.wunderground.com/api/e46f36320707687d/geolookup/conditions/q/\(state!)/\(city!).json")!
+            do {
+            try requestURL = NSURL(string: "http://api.wunderground.com/api/e46f36320707687d/geolookup/conditions/q/\(state!)/\(city!).json")!
+            }
+            catch let error as NSError {
+                requestURL = NSURL(string: "http://api.wunderground.com/api/e46f36320707687d/geolookup/conditions/q/MI/Allendale.json")!
+            }
+            
             
         }
         else {
