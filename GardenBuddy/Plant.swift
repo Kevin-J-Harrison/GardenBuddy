@@ -23,6 +23,7 @@ class Plant {
     var additionalInformation: String
     //var some picture
     var currentWaterLevel: Double = 30.0
+    let hello = "hi"
     
     init (maxWaterLevel: Double, type: String, datePlanted: NSDate, lastWatered: NSDate, estHarvestDate: NSDate, additionalInformation: String, vegetable: Bool) {
         
