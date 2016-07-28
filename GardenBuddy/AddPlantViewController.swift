@@ -9,13 +9,15 @@
 import UIKit
 import THCalendarDatePicker
 
-class AddPlantViewController: UIViewController, THDatePickerDelegate {
+class AddPlantViewController: UIViewController, THDatePickerDelegate{
     
     @IBOutlet weak var dateButton: UIButton!
     @IBOutlet weak var lastWatered: UIButton!
     @IBOutlet weak var plantType: UITextField!
     @IBOutlet weak var requiredWater: UITextField!
-    var curDate : NSDate = NSDate()
+    @IBOutlet weak var vegetableLabel: UILabel!
+    @IBOutlet weak var vegetableCheck: UISwitch!
+    var datePlanted : NSDate = NSDate()
     var lastWateredDate : NSDate = NSDate()
     
     lazy var formatter: NSDateFormatter = {
@@ -38,7 +40,13 @@ class AddPlantViewController: UIViewController, THDatePickerDelegate {
     }
     
     func saveItem(sender: AnyObject) {
-        let aPlant = Plant(maxWaterLevel: 20.0, type: "daisy", datePlanted: NSDate(), lastWatered: NSDate(), estHarvestDate: NSDate(), additionalInformation: "Information", vegetable: false)
+        let aPlant = Plant(maxWaterLevel: Double(self.requiredWater.text!)!,
+                           type: self.plantType.text!,
+                           datePlanted: self.datePlanted,
+                           lastWatered: self.lastWateredDate,
+                           estHarvestDate: NSDate(),
+                           additionalInformation: "Information",
+                           vegetable: (self.vegetableCheck.on == true ? true : false))
         self.sendData(aPlant)
         self.navigationController?.popViewControllerAnimated(true)
     }
@@ -51,6 +59,20 @@ class AddPlantViewController: UIViewController, THDatePickerDelegate {
         self.onDataAvailable?(data: data)
     }
 
+    @IBAction func vegetableCheck(sender: AnyObject) {
+        if sender as! NSObject == self.vegetableCheck {
+            if !self.vegetableCheck.on {
+                self.vegetableLabel.text = "Plant"
+            }
+            else {
+                self.vegetableLabel.text = "Vegetable"
+            }
+        }
+    }
+    
+//    @IBAction func userTappedBackground(sender: AnyObject) {
+//        view.endEditing(true)
+//    }
     /*
     // MARK: - Navigation
 
@@ -61,14 +83,14 @@ class AddPlantViewController: UIViewController, THDatePickerDelegate {
     }
     */
     
-        func refreshTitle(datePicker: THDatePickerViewController!) {
-            if datePicker == self.datePicker {
-                dateButton.setTitle("Date Planted: " + formatter.stringFromDate(datePicker.date), forState: UIControlState.Normal)
-            }
-            else {
-                lastWatered.setTitle("Last Watered On: " + formatter.stringFromDate(datePicker.date), forState: UIControlState.Normal)
-            }
+    func refreshTitle(datePicker: THDatePickerViewController!) {
+        if datePicker == self.datePicker {
+            dateButton.setTitle("Date Planted: " + formatter.stringFromDate(datePicker.date), forState: UIControlState.Normal)
         }
+        else {
+            lastWatered.setTitle("Last Watered On: " + formatter.stringFromDate(datePicker.date), forState: UIControlState.Normal)
+        }
+    }
     
     lazy var datePicker:THDatePickerViewController = {
         var dp = THDatePickerViewController.datePicker()
@@ -103,7 +125,7 @@ class AddPlantViewController: UIViewController, THDatePickerDelegate {
     }()
     
     @IBAction func dateButtonTouched(sender: AnyObject) {
-        datePicker.date = self.curDate
+        datePicker.date = self.datePlanted
         datePicker.setDateHasItemsCallback { (date: NSDate!) -> Bool in
             let tmp = (arc4random() % 30)+1
             return (tmp % 5 == 0)
@@ -145,7 +167,7 @@ class AddPlantViewController: UIViewController, THDatePickerDelegate {
     func datePickerDonePressed(datePicker: THDatePickerViewController!) {
         
         if datePicker == self.datePicker {
-            curDate = datePicker.date
+            datePlanted = datePicker.date
             print("Date Picked Set")
         }
         else {
@@ -155,7 +177,7 @@ class AddPlantViewController: UIViewController, THDatePickerDelegate {
         
         dismissSemiModalView()
         refreshTitle(datePicker)
-        print(curDate)
+        print(datePlanted)
     }
     
     func datePickerCancelPressed(datePicker: THDatePickerViewController!) {
