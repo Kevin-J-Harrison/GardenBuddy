@@ -27,6 +27,7 @@ class GardenViewController: UITableViewController {
         self.tableView.backgroundColor = bgColorCode
         
         self.myGarden = [myVegetables, myPlants]
+        print(precip)
 
         
         
@@ -72,6 +73,7 @@ class GardenViewController: UITableViewController {
                 for (key,val) in postDict.enumerate() {
                     print("key = \(key) and val = \(val)")
                     let entry = Plant(snapshot: val.1 as! Dictionary<String,AnyObject>)
+                    entry.setLastWatered()
                     if entry.vegetable == true {
                         myVegetables.append(entry)
                     }
