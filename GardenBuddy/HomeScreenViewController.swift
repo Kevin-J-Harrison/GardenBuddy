@@ -62,7 +62,7 @@ class HomeScreenViewController: UIViewController {
         }
         var requestURL: NSURL
         
-        if city != nil || state != nil {
+        if city != nil && state != nil {
             city = city!.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())!
             do {
             try requestURL = NSURL(string: "http://api.wunderground.com/api/e46f36320707687d/geolookup/conditions/q/\(state!)/\(city!).json")!
@@ -107,10 +107,6 @@ class HomeScreenViewController: UIViewController {
                             self.updatedAtLabel.text = "\(json["current_observation"]["observation_time"])"
                         });
                     }
-                    //self.weatherImage?.
-                    //self.weatherImage?.loadImageFromURL(NSURL(string: images.rawString()!), placeholderImage: self.videoImage?.image, cachingKey: images.rawString())
-                    
-                    //This works well.
                     print("We are in \(json["location"]["city"])")
                     print("It is \(json["current_observation"]["feelslike_f"]) degrees")
                 }
