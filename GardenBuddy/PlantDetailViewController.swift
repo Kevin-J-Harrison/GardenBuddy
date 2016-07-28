@@ -8,6 +8,7 @@
 
 import UIKit
 import THCalendarDatePicker
+import SmileWeather
 
 class PlantDetailViewController: UIViewController, THDatePickerDelegate {
 
@@ -18,7 +19,7 @@ class PlantDetailViewController: UIViewController, THDatePickerDelegate {
     
     lazy var formatter: NSDateFormatter = {
         var tmpFormatter = NSDateFormatter()
-        tmpFormatter.dateFormat = "dd/MM/yyyy --- HH:mm"
+        tmpFormatter.dateFormat = "MM/dd/yyyy"
         return tmpFormatter
     }()
     
@@ -28,7 +29,6 @@ class PlantDetailViewController: UIViewController, THDatePickerDelegate {
         // Do any additional setup after loading the view.
        let cancelButton = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: #selector(cancel(_:)))
         self.navigationItem.leftBarButtonItem = cancelButton
-        //refreshTitle()
         setupView()
         print(curDate)
     }
@@ -38,9 +38,14 @@ class PlantDetailViewController: UIViewController, THDatePickerDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-//    func refreshTitle() {
-//        dateButton.setTitle((curDate != nil ? formatter.stringFromDate(curDate!) : "No date selected"), forState: UIControlState.Normal)
-//    }
+    func refreshTitle(datePicker: THDatePickerViewController!) {
+        if datePicker == self.datePicker {
+            self.dateButton.setTitle("Date Planted " + formatter.stringFromDate(datePicker.date), forState: UIControlState.Normal)
+        }
+        else {
+            self.lastWatered.setTitle("Last Watered "  + formatter.stringFromDate(datePicker.date), forState: UIControlState.Normal)
+        }
+    }
     
     func setupView() {
         self.view.backgroundColor = bgColorCode
@@ -48,12 +53,6 @@ class PlantDetailViewController: UIViewController, THDatePickerDelegate {
 
     /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
     */
     
     func cancel(sender: AnyObject) {
@@ -145,6 +144,7 @@ class PlantDetailViewController: UIViewController, THDatePickerDelegate {
         }
         
         dismissSemiModalView()
+        refreshTitle(datePicker)
         print(curDate)
     }
     
