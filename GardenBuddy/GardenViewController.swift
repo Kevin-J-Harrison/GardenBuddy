@@ -70,7 +70,7 @@ class GardenViewController: UITableViewController {
             var myPlants = [Plant]()
             if let postDict = snapshot.value as? [String : AnyObject] {
                 for (key,val) in postDict.enumerate() {
-                    print("key = \(key) and val = \(val)")
+                    //print("key = \(key) and val = \(val)")
                     let entry = Plant(snapshot: val.1 as! Dictionary<String,AnyObject>)
                     if entry.vegetable == true {
                         myVegetables.append(entry)
@@ -116,15 +116,25 @@ class GardenViewController: UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "plantDetail" {
-            /*if let indexPath = self.tableView.indexPathForSelectedRow {
+            print("DETAIL ITEM")
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                if let viewController = segue.destinationViewController as? PlantDetailViewController {
+                    viewController.onDataAvailable = {[weak self]
+                        (data) in
+                        if let weakSelf = self {
+                            weakSelf.doSomethingWithData(data)
+                        }
+                    }
+                    let object = myGarden[indexPath.section][indexPath.row]
+                    print(object)
+                    viewController.detailItem = object
+                }
                 
-                let controller = (segue.destinationViewController as! UINavigationController).topViewController as! PlantDetailViewController
-                controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
-                controller.navigationItem.leftItemsSupplementBackButton = true
-            }*/
+                
+            }
         }
         else if segue.identifier == "addItem" {
-                    print("add me")
+                    //print("add me")
                     if let viewController = segue.destinationViewController as? AddPlantViewController {
                         viewController.onDataAvailable = {[weak self]
                             (data) in
@@ -159,7 +169,7 @@ class GardenViewController: UITableViewController {
         else {
             self.myGarden[1].append(plant)
         }
-        print(plant)
+        //print(plant)
         self.ref?.child("This-Device").child(plant.type).setValue(plant.toJSON())
         //NSKeyedArchiver.archiveRootObject(myGarden, toFile: "/myGarden")
         /*let filename = getDocumentsDirectory().stringByAppendingPathComponent("/hi")q
