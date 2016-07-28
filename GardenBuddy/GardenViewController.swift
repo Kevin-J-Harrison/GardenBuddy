@@ -25,42 +25,8 @@ class GardenViewController: UITableViewController {
         let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(insertNewObject(_:)))
         self.navigationItem.rightBarButtonItem = addButton
         self.tableView.backgroundColor = bgColorCode
-        
         self.myGarden = [myVegetables, myPlants]
-        print(precip)
-
-        
-        
-        
-        //let plant = Plant(maxWaterLevel: 20.0, type: "daisy", datePlanted: NSDate(), lastWatered: NSDate(), estHarvestDate: NSDate(), additionalInformation: "Information", vegetable: false)
-        
-       /* myGarden.append(Plant(maxWaterLevel: 20.0, type: "daisy", datePlanted: NSDate(), lastWatered: NSDate(), estHarvestDate: NSDate(), additionalInformation: "Information", vegetable: false))
-        myGarden.append(Plant(maxWaterLevel: 20.0, type: "daisy", datePlanted: NSDate(), lastWatered: NSDate(), estHarvestDate: NSDate(), additionalInformation: "Information", vegetable: false)
-)
-        myGarden.append(Plant(maxWaterLevel: 20.0, type: "daisy", datePlanted: NSDate(), lastWatered: NSDate(), estHarvestDate: NSDate(), additionalInformation: "Information", vegetable: false)
-)
-        myGarden[1].currentWaterLevel = 25
-        myGarden[2].currentWaterLevel = 0*/
-        
         self.ref = FIRDatabase.database().reference()
-        
-        /*if let data = NSUserDefaults.standardUserDefaults().objectForKey("myGarden") as? NSData {
-             let datas = NSKeyedUnarchiver.unarchiveObjectWithData(data) as! [Plant]
-            print(datas)
-        }
-        
-        if let books = NSKeyedUnarchiver.unarchiveObjectWithFile("/myGarden") as? [Plant] {
-            print(books.count)
-        }*/
-        /*if let names = NSKeyedUnarchiver.unarchiveObjectWithFile(filename) as? [String] {
-            myGarden = names
-        }*/
-        //let item = "hi"
-        //self.ref?.child("my-groceries").child("no").setValue(myGarden[0].toJSON())
-        
-        //self.ref?.child(deviceID).setValue(myGarden[0].toJSON())
-        
-        
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -71,7 +37,6 @@ class GardenViewController: UITableViewController {
             var myPlants = [Plant]()
             if let postDict = snapshot.value as? [String : AnyObject] {
                 for (key,val) in postDict.enumerate() {
-                    //print("key = \(key) and val = \(val)")
                     let entry = Plant(snapshot: val.1 as! Dictionary<String,AnyObject>)
                     entry.setLastWatered()
                     if entry.vegetable == true {
@@ -82,7 +47,6 @@ class GardenViewController: UITableViewController {
                     }
                 }
                 self.myGarden = [myVegetables, myPlants]
-                //self.objects.sortInPlace({ $0.compare($1) == NSComparisonResult.OrderedDescending })
                 self.tableView.reloadData()
             }
         })
@@ -107,11 +71,9 @@ class GardenViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
-
         cell.textLabel!.text = self.myGarden[indexPath.section][indexPath.row].type
         cell.detailTextLabel!.text = "\(self.myGarden[indexPath.section][indexPath.row].daysSinceWatered())"
         cell.backgroundColor = self.myGarden[indexPath.section][indexPath.row].getCellColor()
-        
         return cell
     }
     
@@ -144,10 +106,6 @@ class GardenViewController: UITableViewController {
                                 weakSelf.doSomethingWithData(data)
                             }
                         }
-                    
-//                    let controller = (segue.destinationViewController as! UINavigationController).topViewController as! PlantDetailViewController
-//                    controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
-//                    controller.navigationItem.leftItemsSupplementBackButton = true
                 }
         }
 
@@ -171,15 +129,7 @@ class GardenViewController: UITableViewController {
         else {
             self.myGarden[1].append(plant)
         }
-        //print(plant)
         self.ref?.child("This-Device").child(plant.type).setValue(plant.toJSON())
-        //NSKeyedArchiver.archiveRootObject(myGarden, toFile: "/myGarden")
-        /*let filename = getDocumentsDirectory().stringByAppendingPathComponent("/hi")q
-        let data = NSKeyedArchiver.archivedDataWithRootObject(myGarden)
-        
-        
-        data.writeToFile(filename, atomically: true)
-        //NSUserDefaults.standardUserDefaults().setObject(data, forKey: "myGarden")*/
         refreshView()
     }
 
