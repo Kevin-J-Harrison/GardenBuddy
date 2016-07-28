@@ -81,7 +81,7 @@ class GardenViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
 
         cell.textLabel!.text = myGarden[indexPath.row].type
-        cell.detailTextLabel!.text = "\(myGarden[indexPath.row].daysSinceWater())"
+        cell.detailTextLabel!.text = "\(myGarden[indexPath.row].daysSinceWatered())"
         cell.backgroundColor = myGarden[indexPath.row].getCellColor()
         
         return cell

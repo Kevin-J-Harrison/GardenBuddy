@@ -13,8 +13,8 @@ import UIKit
 
 class Plant {
     
-    //Max water level is the estimated hours the plant can go without receiving water
-    let maxWaterLevel: Double
+    //Max water level is the estimated days
+    let maxDaysWithoutWater: Int
     let vegetable: Bool
     var type: String
     var datePlanted: NSDate
@@ -22,46 +22,45 @@ class Plant {
     var estHarvestDate: NSDate
     var additionalInformation: String
     //var some picture
-    var currentWaterLevel: Double = 30.0
-    let hello = "basdf"
+    var daysSinceWater: Int = 0
     
-    init (maxWaterLevel: Double, type: String, datePlanted: NSDate, lastWatered: NSDate, estHarvestDate: NSDate, additionalInformation: String, vegetable: Bool) {
+    init (maxDaysWithoutWater: Int, type: String, datePlanted: NSDate, lastWatered: NSDate, estHarvestDate: NSDate, additionalInformation: String, vegetable: Bool) {
         
-        self.maxWaterLevel = maxWaterLevel
+        self.maxDaysWithoutWater = maxDaysWithoutWater
         self.type = type
         self.datePlanted = datePlanted
         self.lastWatered = lastWatered
         self.estHarvestDate = estHarvestDate
         self.additionalInformation = additionalInformation
         self.vegetable = vegetable
-        
+        setLastWatered()
     }
     
     init(snapshot: FIRDataSnapshot) {
         
         
         //key = snapshot.key
-        maxWaterLevel = snapshot.value!["maxWaterLevel"] as! Double
+        maxDaysWithoutWater = snapshot.value!["maxDaysWithoutWater"] as! Int
         type = snapshot.value!["type"] as! String
         datePlanted = NSDate(timeIntervalSinceReferenceDate: (snapshot.value!["datePlanted"] as! Double))
         lastWatered = NSDate(timeIntervalSinceReferenceDate: (snapshot.value!["lastWatered"] as! Double))
         estHarvestDate = NSDate(timeIntervalSinceReferenceDate: (snapshot.value!["lastWatered"] as! Double))
         additionalInformation = snapshot.value!["additionalInformation"] as! String
         vegetable = snapshot.value!["vegetable"] as! Bool
-        currentWaterLevel = snapshot.value!["currentWaterLevel"] as! Double
+        daysSinceWater = snapshot.value!["daysSinceWater"] as! Int
         
         
     }
     
     init(snapshot: Dictionary<String,AnyObject>) {
-        maxWaterLevel = snapshot["maxWaterLevel"] as! Double
+        maxDaysWithoutWater = snapshot["maxDaysWithoutWater"] as! Int
         type = snapshot["type"] as! String
         datePlanted = NSDate(timeIntervalSinceReferenceDate: (snapshot["datePlanted"] as! Double))
         lastWatered = NSDate(timeIntervalSinceReferenceDate: (snapshot["lastWatered"] as! Double))
         estHarvestDate = NSDate(timeIntervalSinceReferenceDate: (snapshot["lastWatered"] as! Double))
         additionalInformation = snapshot["additionalInformation"] as! String
         vegetable = snapshot["vegetable"] as! Bool
-        currentWaterLevel = snapshot["currentWaterLevel"] as! Double
+        daysSinceWater = snapshot["daysSinceWater"] as! Int
     }
     
 //    // MARK: NSCoding
@@ -94,42 +93,79 @@ class Plant {
 //        coder.encodeBool(self.vegetable, forKey: "vegetable")
 //    }
     
-    func calculateWaterLevel() {
+    /*func calculateWaterLevel() {
         let rightNow = NSDate()
         //Current water level is the max water level minus the hours that have passed since last watering
-        currentWaterLevel = maxWaterLevel - (rightNow.timeIntervalSinceReferenceDate - datePlanted.timeIntervalSinceReferenceDate / (60*60))
-    }
+        daysSinceWater = Int(maxWaterDays - (rightNow.timeIntervalSinceReferenceDate - datePlanted.timeIntervalSinceReferenceDate / (60*60)))
+    }*/
     
-    func addWater(waterAdded: Double) {
+    /*func addWater(waterAdded: Double) {
         //Add water
-        currentWaterLevel += waterAdded
+        daysSinceWater += waterAdded
         
         //If the water level is over max, set to max
-        if currentWaterLevel > maxWaterLevel {
-            currentWaterLevel = maxWaterLevel
+        if daysSinceWater > maxWaterDays {
+            daysSinceWater = maxWaterDays
         }
-    }
+    }*/
     
-    func daysSinceWater() -> String {
+    func daysSinceWatered() -> String {
+        let calendar = NSCalendar.currentCalendar()
         let rightNow = NSDate()
         
-        let daysSince = ((rightNow.timeIntervalSinceReferenceDate - datePlanted.timeIntervalSinceReferenceDate)
-            / (60*60*24) )
+        let componentsLastWatered = calendar.components([.Month, .Day], fromDate: self.lastWatered)
+        let componentsNow = calendar.components([.Month, .Day], fromDate: rightNow)
         
-        if Int(daysSince) == 1 {
+        if componentsNow.day - componentsLastWatered.day  == 1{
             return "Last Watered: 1 day ago"
         }
+        else if componentsNow.day >= componentsLastWatered.day {
+            return "Last Watered: \(componentsNow.day - componentsLastWatered.day) days ago"
+        }
         else {
-            return "Last Watered: \(Int(daysSince)) days ago"
+            
+            let hoursSince = Int((rightNow.timeIntervalSinceReferenceDate - datePlanted.timeIntervalSinceReferenceDate)
+                / (60*60))
+            var daysSince = hoursSince / 24
+            if hoursSince % 24 > 14 {
+                daysSince += 1
+            }
+            
+            return "Last Watered: \(daysSince) days ago"
+            
         }
     }
     
-    func getCellColor() -> UIColor {
-        if currentWaterLevel < 10 {
-            return colorRed
+    func setLastWatered() {
+        let calendar = NSCalendar.currentCalendar()
+        let rightNow = NSDate()
+        
+        let componentsLastWatered = calendar.components([.Month, .Day], fromDate: self.lastWatered)
+        let componentsNow = calendar.components([.Month, .Day], fromDate: rightNow)
+        
+        if componentsNow.day >= componentsLastWatered.day {
+            self.daysSinceWater = componentsNow.day - componentsLastWatered.day
         }
-        else if currentWaterLevel < 30 {
+        else {
+            
+            let hoursSince = Int((rightNow.timeIntervalSinceReferenceDate - datePlanted.timeIntervalSinceReferenceDate)
+                / (60*60))
+            var daysSince = hoursSince / 24
+            if hoursSince % 24 > 14 {
+                daysSince += 1
+            }
+            
+            self.daysSinceWater = daysSince
+        }
+    }
+
+    
+    func getCellColor() -> UIColor {
+        if maxDaysWithoutWater == daysSinceWater  {
             return colorYellow
+        }
+        else if maxDaysWithoutWater < daysSinceWater {
+            return colorRed
         }
         else {
             return colorGreen
@@ -137,14 +173,14 @@ class Plant {
     }
     
     func toJSON() -> Dictionary<String, AnyObject> {
-        return ["maxWaterLevel": maxWaterLevel,
+        return ["maxDaysWithoutWater": maxDaysWithoutWater,
                 "type": type,
                 "datePlanted": datePlanted.timeIntervalSinceReferenceDate,
                 "lastWatered": lastWatered.timeIntervalSinceReferenceDate,
                 "estHarvestDate": estHarvestDate.timeIntervalSinceReferenceDate,
                 "additionalInformation": additionalInformation,
                 "vegetable": vegetable,
-                "currentWaterLevel": currentWaterLevel]
+                "daysSinceWater": daysSinceWater]
     }
     
 }
