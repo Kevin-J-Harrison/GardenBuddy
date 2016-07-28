@@ -7,6 +7,8 @@ target 'GardenBuddy' do
 
   # Pods for GardenBuddy
   pod 'SwiftyJSON'
+  pod 'Firebase/Database'
+  pod 'Firebase'
   pod 'THCalendarDatePicker','~> 1.2.8'
   pod 'SmileWeather'
 
