@@ -26,13 +26,13 @@ class GardenViewController: UITableViewController {
         
         //let plant = Plant(maxWaterLevel: 20.0, type: "daisy", datePlanted: NSDate(), lastWatered: NSDate(), estHarvestDate: NSDate(), additionalInformation: "Information", vegetable: false)
         
-        myGarden.append(Plant(maxWaterLevel: 20.0, type: "daisy", datePlanted: NSDate(), lastWatered: NSDate(), estHarvestDate: NSDate(), additionalInformation: "Information", vegetable: false))
+       /* myGarden.append(Plant(maxWaterLevel: 20.0, type: "daisy", datePlanted: NSDate(), lastWatered: NSDate(), estHarvestDate: NSDate(), additionalInformation: "Information", vegetable: false))
         myGarden.append(Plant(maxWaterLevel: 20.0, type: "daisy", datePlanted: NSDate(), lastWatered: NSDate(), estHarvestDate: NSDate(), additionalInformation: "Information", vegetable: false)
 )
         myGarden.append(Plant(maxWaterLevel: 20.0, type: "daisy", datePlanted: NSDate(), lastWatered: NSDate(), estHarvestDate: NSDate(), additionalInformation: "Information", vegetable: false)
 )
         myGarden[1].currentWaterLevel = 25
-        myGarden[2].currentWaterLevel = 0
+        myGarden[2].currentWaterLevel = 0*/
         
         self.ref = FIRDatabase.database().reference()
         
@@ -50,19 +50,15 @@ class GardenViewController: UITableViewController {
         //let item = "hi"
         //self.ref?.child("my-groceries").child("no").setValue(myGarden[0].toJSON())
         
-        self.ref?.child(deviceID).setValue(myGarden[0].toJSON())
+        //self.ref?.child(deviceID).setValue(myGarden[0].toJSON())
         
         
     }
     
-    /*override func viewWillAppear(animated: Bool) {
-        self.clearsSelectionOnViewWillAppear = self.splitViewController!.collapsed
+    override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         // read from this format yyyy-MM-dd HH:mm:ssZZ
-        self.ref!.child("my-groceries").observeEventType(.Value, withBlock: { snapshot in
-            let dateStringFormatter = NSDateFormatter()
-            dateStringFormatter.dateFormat = "yyyy-MM-dd HH:mm:ssZZ"
-            dateStringFormatter.timeZone = NSTimeZone(name: "UTC")
+        self.ref!.child(deviceID).observeEventType(.Value, withBlock: { snapshot in
             var newEntries = [Plant]()
             if let postDict = snapshot.value as? [String : AnyObject] {
                 for (key,val) in postDict.enumerate() {
@@ -70,12 +66,12 @@ class GardenViewController: UITableViewController {
                     let entry = Plant(snapshot: val.1 as! Dictionary<String,AnyObject>)
                     newEntries.append(entry)
                 }
-                self.objects = newEntries
+                self.myGarden = newEntries
                 //self.objects.sortInPlace({ $0.compare($1) == NSComparisonResult.OrderedDescending })
                 self.tableView.reloadData()
             }
         })
-    }*/
+    }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return myGarden.count
@@ -131,6 +127,8 @@ class GardenViewController: UITableViewController {
     
     func doSomethingWithData(plant: Plant) {
         myGarden.append(plant)
+        print(plant)
+        self.ref?.child(deviceID).child(plant.type).setValue(plant.toJSON())
         //NSKeyedArchiver.archiveRootObject(myGarden, toFile: "/myGarden")
         /*let filename = getDocumentsDirectory().stringByAppendingPathComponent("/hi")q
         let data = NSKeyedArchiver.archivedDataWithRootObject(myGarden)
