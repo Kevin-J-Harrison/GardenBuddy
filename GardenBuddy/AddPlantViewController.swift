@@ -20,6 +20,8 @@ class AddPlantViewController: UIViewController, THDatePickerDelegate{
     var datePlanted : NSDate = NSDate()
     var lastWateredDate : NSDate = NSDate()
     
+    let alertController = UIAlertController(title: "Missing Info", message: "Plant Data is Missing. Please fill in all text fields. If dates are not selected, todays date will be saved by default", preferredStyle: UIAlertControllerStyle.Alert)
+    
     lazy var formatter: NSDateFormatter = {
         var tmpFormatter = NSDateFormatter()
         tmpFormatter.dateFormat = "MM/dd/yyyy"
@@ -32,6 +34,11 @@ class AddPlantViewController: UIViewController, THDatePickerDelegate{
         let addButton = UIBarButtonItem(barButtonSystemItem: .Save, target: self, action: #selector(saveItem(_:)))
         self.navigationItem.rightBarButtonItem = addButton
         // Do any additional setup after loading the view.
+        
+        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) { (result : UIAlertAction) -> Void in
+            //print("OK")
+        }
+        alertController.addAction(okAction)
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,15 +47,20 @@ class AddPlantViewController: UIViewController, THDatePickerDelegate{
     }
     
     func saveItem(sender: AnyObject) {
-        let aPlant = Plant(maxDaysWithoutWater: Int(self.requiredWater.text!)!,
-                           type: self.plantType.text!,
-                           datePlanted: self.datePlanted,
-                           lastWatered: self.lastWateredDate,
-                           estHarvestDate: NSDate(),
-                           additionalInformation: "Information Is Awes",
-                           vegetable: (self.vegetableCheck.on == true ? true : false))
-        self.sendData(aPlant)
-        self.navigationController?.popViewControllerAnimated(true)
+         if self.plantType.text! == "" || self.requiredWater.text! == ""{
+            self.presentViewController(self.alertController, animated: true, completion: nil)
+        }
+        else {
+            let aPlant = Plant(maxDaysWithoutWater: Int(self.requiredWater.text!)!,
+                               type: self.plantType.text!,
+                               datePlanted: self.datePlanted,
+                               lastWatered: self.lastWateredDate,
+                               estHarvestDate: NSDate(),
+                               additionalInformation: "Information Is Awes",
+                               vegetable: (self.vegetableCheck.on == true ? true : false))
+            self.sendData(aPlant)
+            self.navigationController?.popViewControllerAnimated(true)
+        }
     }
     
     var onDataAvailable : ((data: Plant) -> ())?
