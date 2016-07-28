@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2960D1110D56C9C47855BA40 /* Pods_GardenBuddyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38CDBB2DF73A20387F67866E /* Pods_GardenBuddyUITests.framework */; };
+		330C91C61D49863B00F8BED4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 330C91C51D49863B00F8BED4 /* GoogleService-Info.plist */; };
 		335C3CEC1D48093E002931E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335C3CEB1D48093E002931E0 /* AppDelegate.swift */; };
 		335C3CEE1D48093E002931E0 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335C3CED1D48093E002931E0 /* HomeScreenViewController.swift */; };
 		335C3CF01D48093E002931E0 /* GardenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335C3CEF1D48093E002931E0 /* GardenViewController.swift */; };
@@ -44,6 +45,7 @@
 /* Begin PBXFileReference section */
 		1866F6D22EA768C127B44F6F /* Pods-GardenBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GardenBuddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-GardenBuddy/Pods-GardenBuddy.release.xcconfig"; sourceTree = "<group>"; };
 		1CBBD30ACE67994C03A43497 /* Pods-GardenBuddyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GardenBuddyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GardenBuddyTests/Pods-GardenBuddyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		330C91C51D49863B00F8BED4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		335C3CE81D48093E002931E0 /* GardenBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GardenBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		335C3CEB1D48093E002931E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		335C3CED1D48093E002931E0 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				335C3CF11D48093E002931E0 /* Main.storyboard */,
 				335C3CF41D48093E002931E0 /* Assets.xcassets */,
 				335C3CF61D48093E002931E0 /* LaunchScreen.storyboard */,
+				330C91C51D49863B00F8BED4 /* GoogleService-Info.plist */,
 				335C3CF91D48093E002931E0 /* Info.plist */,
 				335F08361D481F6700B97BAA /* Plant.swift */,
 				33A839B81D493B650031ED21 /* gardenConstants.swift */,
@@ -293,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				335C3CF81D48093E002931E0 /* LaunchScreen.storyboard in Resources */,
+				330C91C61D49863B00F8BED4 /* GoogleService-Info.plist in Resources */,
 				335C3CF51D48093E002931E0 /* Assets.xcassets in Resources */,
 				335C3CF31D48093E002931E0 /* Main.storyboard in Resources */,
 			);
