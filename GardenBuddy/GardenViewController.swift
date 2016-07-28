@@ -12,7 +12,7 @@ import FirebaseDatabase
 
 class GardenViewController: UITableViewController {
     
-    var myGarden = [Plant]()
+    var myGarden = [[Plant]]()
     var ref : FIRDatabaseReference?
     let defaults = NSUserDefaults.standardUserDefaults()
     
@@ -23,6 +23,8 @@ class GardenViewController: UITableViewController {
         let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(insertNewObject(_:)))
         self.navigationItem.rightBarButtonItem = addButton
         self.tableView.backgroundColor = bgColorCode
+        
+        
         
         //let plant = Plant(maxWaterLevel: 20.0, type: "daisy", datePlanted: NSDate(), lastWatered: NSDate(), estHarvestDate: NSDate(), additionalInformation: "Information", vegetable: false)
         
@@ -58,15 +60,21 @@ class GardenViewController: UITableViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         // read from this format yyyy-MM-dd HH:mm:ssZZ
-        self.ref!.child(deviceID).observeEventType(.Value, withBlock: { snapshot in
-            var newEntries = [Plant]()
+        self.ref!.child("This-Device").observeEventType(.Value, withBlock: { snapshot in
+            var myVegetables = [Plant]()
+            var myPlants = [Plant]()
             if let postDict = snapshot.value as? [String : AnyObject] {
                 for (key,val) in postDict.enumerate() {
                     print("key = \(key) and val = \(val)")
                     let entry = Plant(snapshot: val.1 as! Dictionary<String,AnyObject>)
-                    newEntries.append(entry)
+                    if entry.vegetable == true {
+                        myVegetables.append(entry)
+                    }
+                    else {
+                        myPlants.append(entry)
+                    }
                 }
-                self.myGarden = newEntries
+                self.myGarden = [myVegetables, myPlants]
                 //self.objects.sortInPlace({ $0.compare($1) == NSComparisonResult.OrderedDescending })
                 self.tableView.reloadData()
             }
@@ -74,18 +82,32 @@ class GardenViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return myGarden.count
+        return self.myGarden[section].count
+    }
+    
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return self.myGarden.count
+    }
+    
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section == 0 {
+            return "Vegetables"
+        }
+        else {
+            return "Plants"
+        }
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
 
-        cell.textLabel!.text = myGarden[indexPath.row].type
-        cell.detailTextLabel!.text = "\(myGarden[indexPath.row].daysSinceWater())"
-        cell.backgroundColor = myGarden[indexPath.row].getCellColor()
+        cell.textLabel!.text = self.myGarden[indexPath.section][indexPath.row].type
+        cell.detailTextLabel!.text = "\(self.myGarden[indexPath.section][indexPath.row].daysSinceWater())"
+        cell.backgroundColor = self.myGarden[indexPath.section][indexPath.row].getCellColor()
         
         return cell
     }
+    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "plantDetail" {
@@ -126,9 +148,14 @@ class GardenViewController: UITableViewController {
     }
     
     func doSomethingWithData(plant: Plant) {
-        myGarden.append(plant)
+        if plant.vegetable == true {
+            self.myGarden[0].append(plant)
+        }
+        else {
+            self.myGarden[1].append(plant)
+        }
         print(plant)
-        self.ref?.child(deviceID).child(plant.type).setValue(plant.toJSON())
+        self.ref?.child("This-Device").child(plant.type).setValue(plant.toJSON())
         //NSKeyedArchiver.archiveRootObject(myGarden, toFile: "/myGarden")
         /*let filename = getDocumentsDirectory().stringByAppendingPathComponent("/hi")q
         let data = NSKeyedArchiver.archivedDataWithRootObject(myGarden)
