@@ -20,7 +20,9 @@
 		335C3D1C1D480D6E002931E0 /* PlantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335C3D1B1D480D6E002931E0 /* PlantDetailViewController.swift */; };
 		335C3D1E1D481103002931E0 /* AddPlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335C3D1D1D481103002931E0 /* AddPlantViewController.swift */; };
 		335F08371D481F6700B97BAA /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335F08361D481F6700B97BAA /* Plant.swift */; };
+		339CDE3E1D4A47B600B3CF40 /* flowers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 339CDE3D1D4A47B600B3CF40 /* flowers.jpg */; };
 		33A839B91D493B650031ED21 /* gardenConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A839B81D493B650031ED21 /* gardenConstants.swift */; };
+		33F286C31D4A38D5008D533F /* brokenImage.gif in Resources */ = {isa = PBXBuildFile; fileRef = 33F286C21D4A38D5008D533F /* brokenImage.gif */; };
 		61E38B1A1D308A9336046A2C /* Pods_GardenBuddyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419461427DB5582CD3455D9B /* Pods_GardenBuddyTests.framework */; };
 		71180FEEF38F17A33100E40E /* Pods_GardenBuddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9634810F5003B6B2F40D320 /* Pods_GardenBuddy.framework */; };
 /* End PBXBuildFile section */
@@ -63,7 +65,9 @@
 		335C3D1B1D480D6E002931E0 /* PlantDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantDetailViewController.swift; sourceTree = "<group>"; };
 		335C3D1D1D481103002931E0 /* AddPlantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlantViewController.swift; sourceTree = "<group>"; };
 		335F08361D481F6700B97BAA /* Plant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		339CDE3D1D4A47B600B3CF40 /* flowers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flowers.jpg; sourceTree = "<group>"; };
 		33A839B81D493B650031ED21 /* gardenConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gardenConstants.swift; sourceTree = "<group>"; };
+		33F286C21D4A38D5008D533F /* brokenImage.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = brokenImage.gif; sourceTree = "<group>"; };
 		38CDBB2DF73A20387F67866E /* Pods_GardenBuddyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GardenBuddyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FA3009EDCEAE61C32BB5178 /* Pods-GardenBuddyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GardenBuddyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GardenBuddyUITests/Pods-GardenBuddyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		419461427DB5582CD3455D9B /* Pods_GardenBuddyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GardenBuddyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +148,8 @@
 				335C3CEF1D48093E002931E0 /* GardenViewController.swift */,
 				335C3D1B1D480D6E002931E0 /* PlantDetailViewController.swift */,
 				335C3D1D1D481103002931E0 /* AddPlantViewController.swift */,
+				33F286C21D4A38D5008D533F /* brokenImage.gif */,
+				339CDE3D1D4A47B600B3CF40 /* flowers.jpg */,
 				335C3CF11D48093E002931E0 /* Main.storyboard */,
 				335C3CF41D48093E002931E0 /* Assets.xcassets */,
 				335C3CF61D48093E002931E0 /* LaunchScreen.storyboard */,
@@ -295,8 +301,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				339CDE3E1D4A47B600B3CF40 /* flowers.jpg in Resources */,
 				335C3CF81D48093E002931E0 /* LaunchScreen.storyboard in Resources */,
 				330C91C61D49863B00F8BED4 /* GoogleService-Info.plist in Resources */,
+				33F286C31D4A38D5008D533F /* brokenImage.gif in Resources */,
 				335C3CF51D48093E002931E0 /* Assets.xcassets in Resources */,
 				335C3CF31D48093E002931E0 /* Main.storyboard in Resources */,
 			);
