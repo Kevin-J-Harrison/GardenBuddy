@@ -13,6 +13,8 @@ import FirebaseDatabase
 class GardenViewController: UITableViewController {
     
     var myGarden = [[Plant]]()
+    var myVegetables = [Plant]()
+    var myPlants = [Plant]()
     var ref : FIRDatabaseReference?
     let defaults = NSUserDefaults.standardUserDefaults()
     
@@ -23,6 +25,9 @@ class GardenViewController: UITableViewController {
         let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(insertNewObject(_:)))
         self.navigationItem.rightBarButtonItem = addButton
         self.tableView.backgroundColor = bgColorCode
+        
+        self.myGarden = [myVegetables, myPlants]
+
         
         
         
@@ -102,7 +107,7 @@ class GardenViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
 
         cell.textLabel!.text = self.myGarden[indexPath.section][indexPath.row].type
-        cell.detailTextLabel!.text = "\(self.myGarden[indexPath.section][indexPath.row].daysSinceWater())"
+        cell.detailTextLabel!.text = "\(self.myGarden[indexPath.section][indexPath.row].daysSinceWatered())"
         cell.backgroundColor = self.myGarden[indexPath.section][indexPath.row].getCellColor()
         
         return cell
