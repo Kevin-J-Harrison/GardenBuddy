@@ -26,7 +26,10 @@ class GardenViewController: UITableViewController {
         self.navigationItem.rightBarButtonItem = addButton
         self.tableView.backgroundColor = bgColorCode
         
+        self.navigationItem.leftBarButtonItem = self.editButtonItem()
         
+        let longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(GardenViewController.longPress(_:)))
+        self.view.addGestureRecognizer(
         
         self.myGarden = [myVegetables, myPlants]
         self.ref = FIRDatabase.database().reference()
@@ -144,6 +147,20 @@ class GardenViewController: UITableViewController {
     func insertNewObject(sender: AnyObject) {
         
         self.performSegueWithIdentifier("addItem", sender: self)
+    }
+    
+    func longPress(longPressGestureRecognizer: UILongPressGestureRecognizer) {
+        
+        if longPressGestureRecognizer.state == UIGestureRecognizerState.Began {
+            
+            let touchPoint = longPressGestureRecognizer.locationInView(self.view)
+            if let indexPath = tableView.indexPathForRowAtPoint(touchPoint) {
+                let plant = self.myGarden[indexPath.section][indexPath.row]
+                plant.lastWatered = NSDate()
+                self.ref?.child("This-Device").child(plant.type).setValue(plant.toJSON())
+                refreshView()
+            }
+        }
     }
 }
 
