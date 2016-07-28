@@ -198,9 +198,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OyZ-oN-A7t">
-                                <rect key="frame" x="20" y="312" width="560" height="89"/>
+                                <rect key="frame" x="20" y="312" width="560" height="149"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="89" id="XL7-c5-snv"/>
+                                    <constraint firstAttribute="height" constant="149" id="XL7-c5-snv"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -213,7 +213,7 @@
                             <constraint firstItem="UFj-dG-ybG" firstAttribute="trailing" secondItem="KIM-Vb-Xw3" secondAttribute="trailingMargin" id="J2b-Tr-mEN"/>
                             <constraint firstItem="fKg-L0-ivy" firstAttribute="trailing" secondItem="KIM-Vb-Xw3" secondAttribute="trailingMargin" id="Pvo-Ft-lb5"/>
                             <constraint firstItem="4wc-0K-Yoy" firstAttribute="leading" secondItem="KIM-Vb-Xw3" secondAttribute="leadingMargin" id="RF5-v7-A2N"/>
-                            <constraint firstItem="qr4-yK-t22" firstAttribute="top" secondItem="OyZ-oN-A7t" secondAttribute="bottom" constant="150" id="VKw-cd-P7N"/>
+                            <constraint firstItem="qr4-yK-t22" firstAttribute="top" secondItem="OyZ-oN-A7t" secondAttribute="bottom" constant="90" id="VKw-cd-P7N"/>
                             <constraint firstItem="lE7-iu-0oH" firstAttribute="leading" secondItem="KIM-Vb-Xw3" secondAttribute="leadingMargin" id="WJd-qa-fqW"/>
                             <constraint firstItem="4k8-B1-91l" firstAttribute="leading" secondItem="4wc-0K-Yoy" secondAttribute="trailing" constant="8" id="aOQ-da-UeU"/>
                             <constraint firstItem="BG5-yD-TgX" firstAttribute="trailing" secondItem="KIM-Vb-Xw3" secondAttribute="trailingMargin" id="cJL-k9-XcW"/>
