@@ -97,7 +97,7 @@
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
-        <!--Garden View Controller-->
+        <!--My Garden-->
         <scene sceneID="GAW-76-c5k">
             <objects>
                 <tableViewController id="6Pl-zZ-lDZ" customClass="GardenViewController" customModule="GardenBuddy" customModuleProvider="target" sceneMemberID="viewController">
@@ -146,7 +146,7 @@
                             <outlet property="delegate" destination="6Pl-zZ-lDZ" id="RIl-yG-YPl"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="P3T-aS-0Qb"/>
+                    <navigationItem key="navigationItem" title="My Garden" id="P3T-aS-0Qb"/>
                     <connections>
                         <segue destination="nev-tm-3na" kind="show" identifier="addItem" id="ZiY-Az-k6y"/>
                     </connections>
@@ -167,28 +167,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAM-qs-vdW">
-                                <rect key="frame" x="20" y="237" width="560" height="30"/>
-                                <state key="normal" title="DatePlanted"/>
-                                <connections>
-                                    <action selector="dateButtonTouched:" destination="Ifd-DF-Yc3" eventType="touchUpInside" id="L0f-fm-Uyd"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Jo-iq-0wc">
-                                <rect key="frame" x="20" y="275" width="560" height="30"/>
-                                <state key="normal" title="LastWatered"/>
-                                <connections>
-                                    <action selector="lastWateredButtonTouched:" destination="Ifd-DF-Yc3" eventType="touchUpInside" id="3rt-We-rQi"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tS1-52-Zgn">
-                                <rect key="frame" x="20" y="72" width="560" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="myF-rS-2NK">
+                                <rect key="frame" x="20" y="216" width="560" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DfC-aB-qyy">
+                                <rect key="frame" x="20" y="251" width="560" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uxv-kI-L2R">
+                                <rect key="frame" x="20" y="286" width="560" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iC1-gw-vyF">
+                                <rect key="frame" x="20" y="321" width="560" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Uxv-kI-L2R" firstAttribute="centerX" secondItem="CoS-6Y-29Z" secondAttribute="centerX" id="2Aj-IY-3OH"/>
+                            <constraint firstItem="Uxv-kI-L2R" firstAttribute="leading" secondItem="CoS-6Y-29Z" secondAttribute="leadingMargin" id="6up-An-yG5"/>
+                            <constraint firstItem="myF-rS-2NK" firstAttribute="trailing" secondItem="CoS-6Y-29Z" secondAttribute="trailingMargin" id="Fnz-Ej-viP"/>
+                            <constraint firstItem="myF-rS-2NK" firstAttribute="leading" secondItem="CoS-6Y-29Z" secondAttribute="leadingMargin" id="JH5-JS-cLg"/>
+                            <constraint firstItem="DfC-aB-qyy" firstAttribute="leading" secondItem="CoS-6Y-29Z" secondAttribute="leadingMargin" id="NW7-JD-S8s"/>
+                            <constraint firstItem="Uxv-kI-L2R" firstAttribute="top" secondItem="DfC-aB-qyy" secondAttribute="bottom" constant="8" id="PZ9-ys-uQc"/>
+                            <constraint firstItem="iC1-gw-vyF" firstAttribute="leading" secondItem="CoS-6Y-29Z" secondAttribute="leadingMargin" id="PfA-pq-9eR"/>
+                            <constraint firstItem="Uxv-kI-L2R" firstAttribute="centerY" secondItem="CoS-6Y-29Z" secondAttribute="centerY" id="ZMX-1R-4iu"/>
+                            <constraint firstItem="DfC-aB-qyy" firstAttribute="trailing" secondItem="CoS-6Y-29Z" secondAttribute="trailingMargin" id="Za8-t4-cJc"/>
+                            <constraint firstItem="DfC-aB-qyy" firstAttribute="top" secondItem="myF-rS-2NK" secondAttribute="bottom" constant="8" id="azR-pc-OoQ"/>
+                            <constraint firstItem="Uxv-kI-L2R" firstAttribute="trailing" secondItem="CoS-6Y-29Z" secondAttribute="trailingMargin" id="o8y-Sh-Nrk"/>
+                            <constraint firstItem="iC1-gw-vyF" firstAttribute="top" secondItem="Uxv-kI-L2R" secondAttribute="bottom" constant="8" id="stt-jo-daa"/>
+                            <constraint firstItem="iC1-gw-vyF" firstAttribute="trailing" secondItem="CoS-6Y-29Z" secondAttribute="trailingMargin" id="zX1-bN-89x"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="e7o-mO-Vnr"/>
                 </viewController>
@@ -230,15 +249,17 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFj-dG-ybG">
                                 <rect key="frame" x="20" y="192" width="560" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Select Date Last Watered"/>
+                                <state key="normal" title="Select Date Last Watered">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="lastWateredButtonTouched:" destination="nev-tm-3na" eventType="touchUpInside" id="dC5-EK-NT5"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Required Water Per Week In Inches" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lE7-iu-0oH">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Days Between Watering" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lE7-iu-0oH">
                                 <rect key="frame" x="20" y="239" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4k8-B1-91l">
                                 <rect key="frame" x="531" y="277" width="51" height="31"/>
