@@ -38,6 +38,10 @@ class AddPlantViewController: UIViewController, THDatePickerDelegate{
         let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) { (result : UIAlertAction) -> Void in
             //print("OK")
         }
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AddPlantViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        
         alertController.addAction(okAction)
     }
 
@@ -80,6 +84,11 @@ class AddPlantViewController: UIViewController, THDatePickerDelegate{
                 self.vegetableLabel.text = "Vegetable"
             }
         }
+    }
+    
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
     
 //    @IBAction func userTappedBackground(sender: AnyObject) {
