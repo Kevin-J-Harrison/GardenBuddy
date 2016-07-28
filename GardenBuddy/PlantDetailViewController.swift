@@ -7,13 +7,10 @@
 //
 
 import UIKit
-<<<<<<< HEAD
-=======
 import THCalendarDatePicker
 import SmileWeather
->>>>>>> 94711cf2f3e1f91c4f4977fe87bb7ca2b7f5019e
 
-class PlantDetailViewController: UIViewController {
+class PlantDetailViewController: UIViewController, THDatePickerDelegate {
 
     @IBOutlet weak var dateButton: UIButton!
     @IBOutlet weak var lastWatered: UIButton!
@@ -41,8 +38,7 @@ class PlantDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-<<<<<<< HEAD
-=======
+
     func refreshTitle(datePicker: THDatePickerViewController!) {
         if datePicker == self.datePicker {
             self.dateButton.setTitle("Date Planted " + formatter.stringFromDate(datePicker.date), forState: UIControlState.Normal)
@@ -51,7 +47,6 @@ class PlantDetailViewController: UIViewController {
             self.lastWatered.setTitle("Last Watered "  + formatter.stringFromDate(datePicker.date), forState: UIControlState.Normal)
         }
     }
->>>>>>> 94711cf2f3e1f91c4f4977fe87bb7ca2b7f5019e
     
     func setupView() {
         self.view.backgroundColor = bgColorCode
@@ -65,8 +60,6 @@ class PlantDetailViewController: UIViewController {
         print("CANCEL")
         self.navigationController?.popViewControllerAnimated(true)
     }
-<<<<<<< HEAD
-=======
     
     lazy var datePicker:THDatePickerViewController = {
         var dp = THDatePickerViewController.datePicker()
@@ -163,7 +156,5 @@ class PlantDetailViewController: UIViewController {
     func datePicker(datePicker: THDatePickerViewController!, selectedDate: NSDate!) {
         print("Date selected: ", formatter.stringFromDate(selectedDate))
     }
-
->>>>>>> 94711cf2f3e1f91c4f4977fe87bb7ca2b7f5019e
 
 }
