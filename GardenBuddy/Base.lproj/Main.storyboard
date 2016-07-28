@@ -130,10 +130,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="e7o-mO-Vnr"/>
-                    <connections>
-                        <outlet property="dateButton" destination="IAM-qs-vdW" id="Hvt-zp-mxS"/>
-                        <outlet property="lastWatered" destination="0Jo-iq-0wc" id="vdz-XL-XDT"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sy8-1n-vu4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -151,78 +147,77 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Item to Garden" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LzP-be-8PY">
-                                <rect key="frame" x="20" y="64" width="560" height="33"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Add Item to Garden" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LzP-be-8PY">
+                                <rect key="frame" x="20" y="72" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type of Plant" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fKg-L0-ivy">
-                                <rect key="frame" x="188" y="105" width="392" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type of Plant" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fKg-L0-ivy">
+                                <rect key="frame" x="20" y="101" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type of Plant" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lE7-iu-0oH">
-                                <rect key="frame" x="188" y="225" width="392" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BG5-yD-TgX">
+                                <rect key="frame" x="20" y="139" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Select Date Planted"/>
+                                <connections>
+                                    <action selector="dateButtonTouched:" destination="nev-tm-3na" eventType="touchUpInside" id="Ngz-VH-0Zi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFj-dG-ybG">
+                                <rect key="frame" x="20" y="177" width="560" height="30"/>
+                                <state key="normal" title="Select Date Last Watered"/>
+                                <connections>
+                                    <action selector="lastWateredButtonTouched:" destination="nev-tm-3na" eventType="touchUpInside" id="dC5-EK-NT5"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Required Water Per Week In Inches" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lE7-iu-0oH">
+                                <rect key="frame" x="20" y="215" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Watered" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r6A-wm-OF3">
-                                <rect key="frame" x="20" y="340" width="560" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Required Water per Week" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Ur-Cy-ZWl">
-                                <rect key="frame" x="20" y="378" width="560" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <datePicker contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="zWh-Rx-wvW">
-                                <rect key="frame" x="188" y="185" width="392" height="32"/>
-                                <date key="date" timeIntervalSinceReferenceDate="491317131.530101">
-                                    <!--2016-07-27 12:58:51 +0000-->
-                                </date>
-                                <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
-                                    <!--1970-01-01 11:00:00 +0000-->
-                                </date>
-                                <date key="maximumDate" timeIntervalSinceReferenceDate="1167562800">
-                                    <!--2037-12-31 11:00:00 +0000-->
-                                </date>
-                            </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date Planted:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bI0-bu-vlb">
-                                <rect key="frame" x="20" y="145" width="160" height="32"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last Watered:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xS-mW-sCL">
-                                <rect key="frame" x="20" y="185" width="160" height="32"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type of Plant:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jo3-cQ-W5t">
-                                <rect key="frame" x="20" y="105" width="160" height="32"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Required Water / Week:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kYy-Vd-9r4">
-                                <rect key="frame" x="20" y="225" width="160" height="32"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OyZ-oN-A7t">
-                                <rect key="frame" x="20" y="416" width="560" height="94"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OyZ-oN-A7t">
+                                <rect key="frame" x="20" y="253" width="560" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98" id="51i-i6-CON"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OyZ-oN-A7t" firstAttribute="leading" secondItem="lE7-iu-0oH" secondAttribute="leading" id="DY9-Zl-ELP"/>
+                            <constraint firstItem="OyZ-oN-A7t" firstAttribute="top" secondItem="lE7-iu-0oH" secondAttribute="bottom" constant="8" symbolic="YES" id="E8z-xB-xI3"/>
+                            <constraint firstItem="BG5-yD-TgX" firstAttribute="trailing" secondItem="KIM-Vb-Xw3" secondAttribute="trailingMargin" id="FAM-ID-CHT"/>
+                            <constraint firstItem="OyZ-oN-A7t" firstAttribute="trailing" secondItem="lE7-iu-0oH" secondAttribute="trailing" id="GY0-Wu-Xkc"/>
+                            <constraint firstItem="LzP-be-8PY" firstAttribute="leading" secondItem="KIM-Vb-Xw3" secondAttribute="leadingMargin" id="I2Y-eA-U0m"/>
+                            <constraint firstItem="fKg-L0-ivy" firstAttribute="top" secondItem="LzP-be-8PY" secondAttribute="bottom" constant="8" id="JmE-qW-Yej"/>
+                            <constraint firstItem="qr4-yK-t22" firstAttribute="top" secondItem="OyZ-oN-A7t" secondAttribute="bottom" constant="200" id="Pa2-Km-9fh"/>
+                            <constraint firstItem="LzP-be-8PY" firstAttribute="trailing" secondItem="KIM-Vb-Xw3" secondAttribute="trailingMargin" id="UX4-56-pd8"/>
+                            <constraint firstItem="BG5-yD-TgX" firstAttribute="leading" secondItem="KIM-Vb-Xw3" secondAttribute="leadingMargin" id="ZW0-Lf-ifa"/>
+                            <constraint firstItem="lE7-iu-0oH" firstAttribute="top" secondItem="UFj-dG-ybG" secondAttribute="bottom" constant="8" id="bsX-X1-z7e"/>
+                            <constraint firstItem="BG5-yD-TgX" firstAttribute="top" secondItem="fKg-L0-ivy" secondAttribute="bottom" constant="8" id="cq9-eI-h9u"/>
+                            <constraint firstItem="lE7-iu-0oH" firstAttribute="leading" secondItem="KIM-Vb-Xw3" secondAttribute="leadingMargin" id="g6G-Hh-lry"/>
+                            <constraint firstItem="fKg-L0-ivy" firstAttribute="leading" secondItem="KIM-Vb-Xw3" secondAttribute="leadingMargin" id="oab-p7-zYu"/>
+                            <constraint firstItem="LzP-be-8PY" firstAttribute="top" secondItem="e1Q-bb-7bQ" secondAttribute="bottom" constant="8" id="ooB-DH-T34"/>
+                            <constraint firstItem="UFj-dG-ybG" firstAttribute="leading" secondItem="KIM-Vb-Xw3" secondAttribute="leadingMargin" id="r2Y-Ne-VDF"/>
+                            <constraint firstItem="fKg-L0-ivy" firstAttribute="trailing" secondItem="KIM-Vb-Xw3" secondAttribute="trailingMargin" id="rk2-8Z-Wo5"/>
+                            <constraint firstItem="lE7-iu-0oH" firstAttribute="trailing" secondItem="KIM-Vb-Xw3" secondAttribute="trailingMargin" id="vxb-Vz-Q2a"/>
+                            <constraint firstItem="UFj-dG-ybG" firstAttribute="top" secondItem="BG5-yD-TgX" secondAttribute="bottom" constant="8" id="yjU-J3-cQO"/>
+                            <constraint firstItem="UFj-dG-ybG" firstAttribute="trailing" secondItem="KIM-Vb-Xw3" secondAttribute="trailingMargin" id="yuJ-Se-J9m"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dateButton" destination="BG5-yD-TgX" id="i4H-py-90d"/>
+                        <outlet property="lastWatered" destination="UFj-dG-ybG" id="KZj-Xy-T6T"/>
+                        <outlet property="plantType" destination="fKg-L0-ivy" id="HLM-4Y-e8j"/>
+                        <outlet property="requiredWater" destination="lE7-iu-0oH" id="6Jf-vT-J1j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r9D-68-dTn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2398" y="412"/>
+            <point key="canvasLocation" x="2391" y="360"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
