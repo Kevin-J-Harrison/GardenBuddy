@@ -8,6 +8,7 @@
 
 import Foundation
 import Firebase
+import FirebaseDatabase
 import UIKit
 
 class Plant {
@@ -22,6 +23,7 @@ class Plant {
     var additionalInformation: String
     //var some picture
     var currentWaterLevel: Double = 30.0
+    let hello = "hi"
     
     init (maxWaterLevel: Double, type: String, datePlanted: NSDate, lastWatered: NSDate, estHarvestDate: NSDate, additionalInformation: String, vegetable: Bool) {
         
@@ -35,27 +37,32 @@ class Plant {
         
     }
     
-    /*init(snapshot: FIRDataSnapshot) {
+    init(snapshot: FIRDataSnapshot) {
         
         
         //key = snapshot.key
         maxWaterLevel = snapshot.value!["maxWaterLevel"] as! Double
         type = snapshot.value!["type"] as! String
+        datePlanted = NSDate(timeIntervalSinceReferenceDate: (snapshot.value!["datePlanted"] as! Double))
+        lastWatered = NSDate(timeIntervalSinceReferenceDate: (snapshot.value!["lastWatered"] as! Double))
+        estHarvestDate = NSDate(timeIntervalSinceReferenceDate: (snapshot.value!["lastWatered"] as! Double))
+        additionalInformation = snapshot.value!["additionalInformation"] as! String
+        vegetable = snapshot.value!["vegetable"] as! Bool
+        currentWaterLevel = snapshot.value!["currentWaterLevel"] as! Double
+        
         
     }
     
     init(snapshot: Dictionary<String,AnyObject>) {
-        //    let checkedStringFormatter = NScheckedFormatter()
-        //    checkedStringFormatter.checkedFormat = "yyyy-MM-dd HH:mm:ssZZ"
-        //    checkedStringFormatter.timeZone = NSTimeZone(item: "UTC")
-        //
-        //
-        //    //key = snapshot.key
         maxWaterLevel = snapshot["maxWaterLevel"] as! Double
         type = snapshot["type"] as! String
-        //    let checkedStr = snapshot["checked"] as! String
-        //    checked = checkedStringFormatter.checkedFromString(checkedStr)
-    }*/
+        datePlanted = NSDate(timeIntervalSinceReferenceDate: (snapshot["datePlanted"] as! Double))
+        lastWatered = NSDate(timeIntervalSinceReferenceDate: (snapshot["lastWatered"] as! Double))
+        estHarvestDate = NSDate(timeIntervalSinceReferenceDate: (snapshot["lastWatered"] as! Double))
+        additionalInformation = snapshot["additionalInformation"] as! String
+        vegetable = snapshot["vegetable"] as! Bool
+        currentWaterLevel = snapshot["currentWaterLevel"] as! Double
+    }
     
 //    // MARK: NSCoding
 //    
@@ -136,7 +143,8 @@ class Plant {
                 "lastWatered": lastWatered.timeIntervalSinceReferenceDate,
                 "estHarvestDate": estHarvestDate.timeIntervalSinceReferenceDate,
                 "additionalInformation": additionalInformation,
-                "vegetable": vegetable]
+                "vegetable": vegetable,
+                "currentWaterLevel": currentWaterLevel]
     }
     
 }
