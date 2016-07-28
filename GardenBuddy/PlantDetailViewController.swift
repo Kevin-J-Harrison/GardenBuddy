@@ -48,6 +48,7 @@ class PlantDetailViewController: UIViewController {
         self.plantTypeLabel.text = detailItem!.type
         self.datePlantedLabel.text = "Date Planted: " + formatter.stringFromDate(detailItem!.datePlanted)
         self.lastWateredLabel.text = "Last Watered: " + formatter.stringFromDate(detailItem!.lastWatered)
+        self.lastWateredLabel.textColor = detailItem?.getCellColor()
         self.estimatedHarvestLabel.text = "Estimated Harvest"
         
     }
@@ -62,7 +63,9 @@ class PlantDetailViewController: UIViewController {
     }
     
     func tapFunction(sender:UITapGestureRecognizer) {
-        print("tap working")
+        detailItem?.lastWatered = NSDate()
+        self.lastWateredLabel.text = "Last Watered: " + formatter.stringFromDate(detailItem!.lastWatered)
+        self.lastWateredLabel.textColor = UIColor.blackColor()
     }
     
     var onDataAvailable : ((data: Plant) -> ())?
