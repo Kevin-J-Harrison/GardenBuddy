@@ -11,7 +11,6 @@ import UIKit
 import SwiftyJSON
 
 class HomeScreenViewController: UIViewController {
-
     @IBOutlet weak var updatedAtLabel: UILabel!
     @IBOutlet weak var weatherTextRepLabel: UILabel!
     @IBOutlet weak var cityLabel: UILabel!
@@ -23,23 +22,33 @@ class HomeScreenViewController: UIViewController {
     
     
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
         parseWeatherRequest()
-        let date = NSDate()
-        let unitFlags: NSCalendarUnit = [.Hour, .Day, .Month, .Year]
-        let components = NSCalendar.currentCalendar().components(unitFlags, fromDate: date)
-        print(components.day)
-        
-        let calendar = NSCalendar.currentCalendar()
-        let date2 = NSDate()
-        let components2 = calendar.components([.Month, .Day], fromDate: date2)
-        print(components2.day)
     }
     
     func parseWeatherRequest() {
-        let requestURL: NSURL = NSURL(string: "http://api.wunderground.com/api/e46f36320707687d/geolookup/conditions/q/MI/Allendale.json")!
+        var city: String?
+        var state: String?
+        var userInput = "Coram, NY"
+        if let rangeOfComma = userInput.rangeOfString(" ", options: NSStringCompareOptions.BackwardsSearch)  {
+            // Found a zero, get the following text
+            state = String(userInput.characters.suffixFrom(rangeOfComma.endIndex))
+            print(state)
+            city = String(userInput.characters.prefixUpTo(rangeOfComma.endIndex.advancedBy(-2)))
+            
+            print(city)
+        }
+        var requestURL: NSURL
+        if city != nil || state != nil {
+            requestURL = NSURL(string: "http://api.wunderground.com/api/e46f36320707687d/geolookup/conditions/q/\(state!)/\(city!).json")!
+        }
+        else {
+            requestURL = NSURL(string: "http://api.wunderground.com/api/e46f36320707687d/geolookup/conditions/q/MI/Allendale.json")!
+        }
         let urlRequest: NSMutableURLRequest = NSMutableURLRequest(URL: requestURL)
         let session = NSURLSession.sharedSession()
         let task = session.dataTaskWithRequest(urlRequest) {
@@ -65,6 +74,7 @@ class HomeScreenViewController: UIViewController {
                             self.cityLabel.text = "\(json["current_observation"]["display_location"]["full"])"
                             self.degrees.text = "\(json["current_observation"]["feelslike_f"]) \u{00B0} \(json["current_observation"]["weather"])"
                             self.weatherTextRepLabel.text = "Precip today: \(json["current_observation"]["precip_today_string"])"
+                            precip = "\(json["current_observation"]["precip_today_metric"])"
                             self.updatedAtLabel.text = "\(json["current_observation"]["observation_time"])"
                         });
                     }

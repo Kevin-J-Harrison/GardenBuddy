@@ -143,9 +143,15 @@ class Plant {
         let componentsLastWatered = calendar.components([.Month, .Day], fromDate: self.lastWatered)
         let componentsNow = calendar.components([.Month, .Day], fromDate: rightNow)
         
-        if componentsNow.day >= componentsLastWatered.day {
+        if Double(precip) > 5.0 {
+            lastWatered = NSDate()
+            daysSinceWater = 0
+        }
+            
+        else if componentsNow.day >= componentsLastWatered.day {
             self.daysSinceWater = componentsNow.day - componentsLastWatered.day
         }
+            
         else {
             
             let hoursSince = Int((rightNow.timeIntervalSinceReferenceDate - datePlanted.timeIntervalSinceReferenceDate)

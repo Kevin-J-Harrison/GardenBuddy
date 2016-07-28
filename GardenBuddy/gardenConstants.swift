@@ -15,3 +15,4 @@ import UIKit
     let colorGreen = UIColor(colorLiteralRed: 0.61, green: 0.98, blue: 0.47, alpha: 1.0)
     let WUGAPIKey = "e46f36320707687d"
     let deviceID = UIDevice.currentDevice().identifierForVendor!.UUIDString
+    var precip = ""
