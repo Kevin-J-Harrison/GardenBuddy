@@ -40,7 +40,7 @@ class AddPlantViewController: UIViewController, THDatePickerDelegate{
     }
     
     func saveItem(sender: AnyObject) {
-        let aPlant = Plant(maxWaterLevel: Double(self.requiredWater.text!)!,
+        let aPlant = Plant(maxDaysWithoutWater: Int(self.requiredWater.text!)!,
                            type: self.plantType.text!,
                            datePlanted: self.datePlanted,
                            lastWatered: self.lastWateredDate,

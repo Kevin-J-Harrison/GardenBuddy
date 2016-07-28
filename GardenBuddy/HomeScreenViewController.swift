@@ -27,6 +27,15 @@ class HomeScreenViewController: UIViewController {
         super.viewDidLoad()
         setupView()
         parseWeatherRequest()
+        let date = NSDate()
+        let unitFlags: NSCalendarUnit = [.Hour, .Day, .Month, .Year]
+        let components = NSCalendar.currentCalendar().components(unitFlags, fromDate: date)
+        print(components.day)
+        
+        let calendar = NSCalendar.currentCalendar()
+        let date2 = NSDate()
+        let components2 = calendar.components([.Month, .Day], fromDate: date2)
+        print(components2.day)
     }
     
     func parseWeatherRequest() {
