@@ -7,7 +7,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--Home-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="HomeScreenViewController" customModule="GardenBuddy" customModuleProvider="target" sceneMemberID="viewController">
@@ -67,8 +67,16 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Change City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XQa-II-WpJ">
+                                <rect key="frame" x="28" y="178" width="300" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="changeCityText:" destination="9pv-A4-QxB" eventType="editingDidEnd" id="TbT-Eg-lcp"/>
+                                </connections>
+                            </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="flowers" translatesAutoresizingMaskIntoConstraints="NO" id="ycB-HK-n4b">
-                                <rect key="frame" x="179" y="178" width="243" height="300"/>
+                                <rect key="frame" x="154" y="217" width="243" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ycB-HK-n4b" secondAttribute="height" multiplier="81:100" id="J1K-o5-RmD"/>
                                 </constraints>
@@ -83,8 +91,9 @@
                             <constraint firstItem="ycB-HK-n4b" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="yFl-cr-p2q"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="icons" id="acW-dT-cKf"/>
                     <connections>
+                        <outlet property="changeCityField" destination="XQa-II-WpJ" id="fo9-zO-K6n"/>
                         <outlet property="cityLabel" destination="Glm-Na-Uo4" id="YNL-vC-Tdd"/>
                         <outlet property="degrees" destination="ErI-zh-e4u" id="K5V-Y3-QQC"/>
                         <outlet property="titleLabel" destination="KQZ-1w-vlD" id="78h-tr-EFq"/>
@@ -363,11 +372,11 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Second-->
+        <!--My Garden-->
         <scene sceneID="xp6-GR-pOs">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cmM-eX-zYT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="My Garden" image="myGarden" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qpB-O4-AE4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -385,8 +394,9 @@
     </scenes>
     <resources>
         <image name="brokenImage.gif" width="50" height="50"/>
-        <image name="first" width="30" height="30"/>
         <image name="flowers" width="175" height="233"/>
+        <image name="icons" width="25" height="25"/>
+        <image name="myGarden" width="25" height="25"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>

@@ -4,7 +4,6 @@
 //
 //  Created by X Code User on 7/26/16.
 //  Copyright © 2016 Kevin & Scott. All rights reserved.
-// WUG API Key: e46f36320707687d
 //
 
 import UIKit
@@ -15,40 +14,64 @@ class HomeScreenViewController: UIViewController {
     @IBOutlet weak var weatherTextRepLabel: UILabel!
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var weatherImage: UIImageView!
-    
+    @IBAction func changeCityText(sender: UITextField) {
+        parseWeatherRequest()
+    }
+    @IBOutlet weak var changeCityField: UITextField!
     @IBOutlet weak var titleLabel: UILabel!
     
     @IBOutlet weak var degrees: UILabel!
     
-    
-    
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
         parseWeatherRequest()
+        //Looks for single or multiple taps.
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
     }
     
     func parseWeatherRequest() {
         var city: String?
         var state: String?
-        var userInput = "Coram, NY"
-        if let rangeOfComma = userInput.rangeOfString(" ", options: NSStringCompareOptions.BackwardsSearch)  {
+        var userInput = changeCityField.text
+        
+        if userInput != "" {
+            NSUserDefaults.standardUserDefaults().setObject(userInput, forKey: "savedCity")
+        }
+        
+        if  let saved = NSUserDefaults.standardUserDefaults().stringForKey("savedCity") {
+            userInput = saved
+        }
+
+        
+        
+        if let rangeOfComma = userInput!.rangeOfString(", ", options: NSStringCompareOptions.BackwardsSearch)  {
             // Found a zero, get the following text
-            state = String(userInput.characters.suffixFrom(rangeOfComma.endIndex))
+            state = String(userInput!.characters.suffixFrom(rangeOfComma.endIndex))
             print(state)
-            city = String(userInput.characters.prefixUpTo(rangeOfComma.endIndex.advancedBy(-2)))
+            city = String(userInput!.characters.prefixUpTo(rangeOfComma.endIndex.advancedBy(-2)))
             
             print(city)
         }
         var requestURL: NSURL
+        
         if city != nil || state != nil {
+            city = city!.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())!
             requestURL = NSURL(string: "http://api.wunderground.com/api/e46f36320707687d/geolookup/conditions/q/\(state!)/\(city!).json")!
+            
         }
         else {
             requestURL = NSURL(string: "http://api.wunderground.com/api/e46f36320707687d/geolookup/conditions/q/MI/Allendale.json")!
         }
+       
+        print(requestURL)
         let urlRequest: NSMutableURLRequest = NSMutableURLRequest(URL: requestURL)
         let session = NSURLSession.sharedSession()
         let task = session.dataTaskWithRequest(urlRequest) {
@@ -85,7 +108,8 @@ class HomeScreenViewController: UIViewController {
                     print("We are in \(json["location"]["city"])")
                     print("It is \(json["current_observation"]["feelslike_f"]) degrees")
                 }
-                
+            
+            
             }
             
         }
