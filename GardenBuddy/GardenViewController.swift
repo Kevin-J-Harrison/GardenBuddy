@@ -80,9 +80,9 @@ class GardenViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
 
-        cell.textLabel!.text = myGarden[indexPath.row].type
-        cell.detailTextLabel!.text = "\(myGarden[indexPath.row].daysSinceWatered())"
-        cell.backgroundColor = myGarden[indexPath.row].getCellColor()
+        cell.textLabel!.text = self.myGarden[indexPath.section][indexPath.row].type
+        cell.detailTextLabel!.text = "\(self.myGarden[indexPath.section][indexPath.row].daysSinceWater())"
+        cell.backgroundColor = self.myGarden[indexPath.section][indexPath.row].getCellColor()
         
         return cell
     }
