@@ -1,0 +1,1719 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00F65B41DDCDCB3F75B80178042D95FE /* smile_umbrella@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 555C7A0925F96123FEB8A8EFA695D901 /* smile_umbrella@2x.png */; };
+		01706960FC45B3EFAA71A73C86EEFC4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A01E75A311CCEC352F73FE34CE0C8F /* Foundation.framework */; };
+		0CC065D950865F2E18D9A9726D253DFD /* UIViewController+KNSemiModal.h in Headers */ = {isa = PBXBuildFile; fileRef = 54BCD115B7F7C1205DEE8D131CB9BC0C /* UIViewController+KNSemiModal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		104C6FDA1CA8546D5C3D1AA568E0A315 /* NSDate+Difference.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 2A8788A1102E0EC75038E964F377B396 /* NSDate+Difference.h */; };
+		108A6E78CF485F63FE10D22075F86E24 /* smile_sunglass@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47791A59B05D0714079E39E39F4DCDE1 /* smile_sunglass@3x.png */; };
+		16286C0F8A2924589D30B3ADBCF89F3A /* smile_pressure@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F06E8969877239921FEA10178C75FE8 /* smile_pressure@2x.png */; };
+		177CA0E35C47AFB571C43013685DDD13 /* smile_sunglass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C5F99C9A7885D60544ECA1DB6F97512 /* smile_sunglass@2x.png */; };
+		18228AA8762E71826987C5DB87FBD573 /* smile_wunder_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DC890E282BB24629399CA7172B01051 /* smile_wunder_logo@2x.png */; };
+		2568F8D8BD0354FA1ADD9B3CDA4394CD /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FB4321BD0C62398D48D423C6D7641E /* SwiftyJSON.swift */; };
+		278C62FDF4EF86E7DC4395307C7D85A7 /* THDateDay.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 45D229915C6086730C670BEB8C85EC9D /* THDateDay.h */; };
+		2C2C262244C2D9E500825E7E9A00D8CA /* smile_pressure@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2210CDE968076D3B97C9CF48B48CDEC1 /* smile_pressure@3x.png */; };
+		2E9C648DFEF7844363F7BB5A467FE849 /* THDatePickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A5EFF4AAD5EF200FAF41AF262E14C09B /* THDatePickerViewController.h */; };
+		2F28EDE79C2D182991AF5A6D7FABE453 /* THCalendarDatePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFFF8FFF8535A947BA3E09E65AFA59D /* THCalendarDatePicker-dummy.m */; };
+		31E6E4CCDED327276A8B8FA9F730DA06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16E582E40212C0DB0FDD1E461239E8C9 /* UIKit.framework */; };
+		333FCE1A18E51B829AC9CE5E76AF2048 /* smile_umbrella@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E94221F3302195BCF2DB54BADC90D9B /* smile_umbrella@3x.png */; };
+		36B4DCDF742A8A667ABBD1785DC555BD /* SmileWeatherOneDayData.h in Headers */ = {isa = PBXBuildFile; fileRef = 88358B6C8D119565D1C4534DB3899DAC /* SmileWeatherOneDayData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		385847261D2B514C6502FDB437BDE5C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A01E75A311CCEC352F73FE34CE0C8F /* Foundation.framework */; };
+		386142E963A55F2DFCF9F706D9C48B70 /* smile_wind@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B6FD890956945287E002E16C98F8366 /* smile_wind@3x.png */; };
+		3B575B95222F286FE8BA4399FA445E1A /* THDateDay.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E7CC28042A3153BFF0169DA2CFA379 /* THDateDay.m */; };
+		3B72C648DF5562A3A39D81243CAD3CEF /* SmileWeatherCurrentData.h in Headers */ = {isa = PBXBuildFile; fileRef = 959D790DA6FA1311D22E332F9A372DB0 /* SmileWeatherCurrentData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DEC90C6005B342D712C7B675E897D52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A01E75A311CCEC352F73FE34CE0C8F /* Foundation.framework */; };
+		3EDFF2F7CA7543836586FAB950B745DB /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5C3AA002767E1EF46EE52F03B48CA66 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EE3EA35AE225F4175527E9CA0BB2245 /* SmileLineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D155FDB9BDA21665A027C59986A615C /* SmileLineLayout.m */; };
+		436C61F7114585C6D878F76CB304DEB6 /* smile_wunder_logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6E8F271DF4B0107F9C14F26754327D4 /* smile_wunder_logo@3x.png */; };
+		4524853D96BC37CFD4C941220E9F3350 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A01E75A311CCEC352F73FE34CE0C8F /* Foundation.framework */; };
+		48F4D2FAFC09A05C31BDE338B2CBEC5D /* SmileWeather-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FDCB4EF0E99B02DA22080B9DDF4CEE3 /* SmileWeather-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50605412241D3B1EEB8A1B2777BF5ADF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5EA4173D9132633302051224670F459 /* QuartzCore.framework */; };
+		513546ADA9A3893A174F56B743190D4B /* SmileWeatherDemoVC.h in Headers */ = {isa = PBXBuildFile; fileRef = A11D50B34433D3915CEA6F295626B426 /* SmileWeatherDemoVC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5519DAF7E7DA344AA3A3098E051BE913 /* SmileWeatherHourlyData.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7D544E5B8DCA04BCC4554A1367A1CF /* SmileWeatherHourlyData.m */; };
+		5BD20399347E1867C4DC387115C8398A /* SmileWeatherCurrentData.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AB75FD9AD8C3BF3D5A80F3B601B2A5 /* SmileWeatherCurrentData.m */; };
+		5D7C0D55A94265239027D6F75F363059 /* SmileWeatherData.h in Headers */ = {isa = PBXBuildFile; fileRef = 98AFE3F8C96B8C4E7B975903D107C871 /* SmileWeatherData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60A2877B193EB8A941EB2A821FAD38BB /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8C73FCC3DE6C4CC20B2121AB95F96D /* SwiftyJSON-dummy.m */; };
+		632D63C633B688F285B71D72C89B764E /* THDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F52D2D96F3641464EE3A1E420D85D2 /* THDatePickerViewController.m */; };
+		637D36C7D25346FC077E443D8C8B4C5C /* smile_sunrise@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD618124301B37991617FDB626CFA347 /* smile_sunrise@2x.png */; };
+		6B9F089564E5F4BA1997361D8DD4057D /* NSDate+Difference.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A8788A1102E0EC75038E964F377B396 /* NSDate+Difference.h */; };
+		708A6193646E3DB2847B8BF35EF4355C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A01E75A311CCEC352F73FE34CE0C8F /* Foundation.framework */; };
+		7235EE12856D1BC800AD79810B6DAF47 /* Pods-GardenBuddyTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 413022FA14240E7128F03CDD513ECE91 /* Pods-GardenBuddyTests-dummy.m */; };
+		734E6304D8C162FCE59D98A5903BCECE /* KNSemiModalViewController_hons82-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 889C900D061A563EA35C9E2AD1F48B89 /* KNSemiModalViewController_hons82-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76A04BB5F2F303525946CD2B1E140795 /* THCalendarDatePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED56A303722F15DD79508E994B7689E4 /* THCalendarDatePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		778F9133366B2BB4BD30BC569E0EDE72 /* NSDate+Difference.m in Sources */ = {isa = PBXBuildFile; fileRef = 546EF8798EFFBBACBD5DC0C915B16BE5 /* NSDate+Difference.m */; };
+		7BE781CBC99427F6EBFC2C58088DF614 /* NSString+SmileSubstring.m in Sources */ = {isa = PBXBuildFile; fileRef = 1466F48C06A08A2799DBD3F36DED6570 /* NSString+SmileSubstring.m */; };
+		7DEE6F0E34C5586DA5FA73276AAEE78B /* KNSemiModalViewController_hons82-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF7CC7D36696C2A5BF0E832D44629B1 /* KNSemiModalViewController_hons82-dummy.m */; };
+		8163A60362E461710D7B192CA81C9FB3 /* UIViewController+KNSemiModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 680F5AA1989CC174CAF5DE259C6DD701 /* UIViewController+KNSemiModal.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		867CBA8C132D8B584D3D217B776F09A1 /* SmileWeatherData.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE248E466BB41A8EB6380CF64704EA6 /* SmileWeatherData.m */; };
+		8BC229F3B3C70F2A8DA555292A863FE9 /* smile_drop@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 211894EF0D99E5A85898D6DC4989E4E9 /* smile_drop@3x.png */; };
+		8CB028D403A3620FC2C6A600EFF38DD6 /* THDateDay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 852713D09164C15CD9113BF6D833F7C8 /* THDateDay.xib */; };
+		8F5775019A51351449630F7A9DF2CDC9 /* SmileWeatherPropertyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F92F8AED675E45BA6268D49C44259A16 /* SmileWeatherPropertyCell.xib */; };
+		8F9D486D6AF4F8EB2DFC318710A33AED /* SmileWeatherOneDayData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5656B7F95CC186AC91E7304E6E92B6EF /* SmileWeatherOneDayData.m */; };
+		918393F069C65D65EF60D32072E62964 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A01E75A311CCEC352F73FE34CE0C8F /* Foundation.framework */; };
+		955E78BE1C794262B709C8E0B7CA58A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A01E75A311CCEC352F73FE34CE0C8F /* Foundation.framework */; };
+		960127539A5E2CC07D24D389F13C5613 /* SmileLineLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = BE4331D153B4957BA7B92C0F2A51E414 /* SmileLineLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1C9664585F65BAEC04467D6EB3E4066 /* smile_sunset@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D798AE7562E8FC5EC368B2A2084B05D3 /* smile_sunset@2x.png */; };
+		A1F61E1383259D044C4BA8076564BD18 /* Pods-GardenBuddyUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CE5DFD3C53E4D1FC23915574800457F /* Pods-GardenBuddyUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A38C1ABF9A5F9E5BD7BA12BDF96B1F08 /* SmileWeatherDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DD6BA4B116200C5F7E37C792BDFC50 /* SmileWeatherDemoVC.m */; };
+		A97F50AC7D81A35910A41E8DC1555038 /* THDateDay.h in Headers */ = {isa = PBXBuildFile; fileRef = 45D229915C6086730C670BEB8C85EC9D /* THDateDay.h */; };
+		AA099090798214E60F29BCBC2E51C724 /* Pods-GardenBuddy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 47B7D2A2C31B1C604A5603ED2181B1DD /* Pods-GardenBuddy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AADA59C39C9228E87B529D64A38F94C5 /* SmileWeatherForecastDayData.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA192125D6B56ABBDF0F2B64BD04D68 /* SmileWeatherForecastDayData.m */; };
+		AC78F9196D20E658BC026A55A3702521 /* Pods-GardenBuddy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F7BD70960468ED463595ABC7825C9 /* Pods-GardenBuddy-dummy.m */; };
+		AE04B6F772CD12956E88A422952E1020 /* smile_openweather_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A2F506E41B1D9E2AB4DCD4EB4E3851 /* smile_openweather_logo@2x.png */; };
+		B69503325DC5DC0987D7C11B9BCFFF22 /* smile_drop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B0EBCAD5272980C13DDE30635D17F7 /* smile_drop@2x.png */; };
+		B76430BAC9B07481EA84D34DC49B22DE /* SmileWeatherDownLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A369DFD7C91B41277947D3BFC4376B /* SmileWeatherDownLoader.m */; };
+		B9BF6F74451EDD5A0060E1FAE56F031D /* KNSemiModalViewController_hons82.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 966B4C8D11A640851622D44688A1FA48 /* KNSemiModalViewController_hons82.framework */; };
+		BD3DA1AD84ABDB6C577EE123612DF665 /* THDatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 250955DC746AEFB26194146B29730ED9 /* THDatePickerViewController.xib */; };
+		BDE59215C76EEE214501D583B8D4C493 /* smile_sunset@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85283B0BB3612AF18D03697BD5CB3FEA /* smile_sunset@3x.png */; };
+		C193967A283442BA90C77C7DC7ABACC1 /* smile_openweather_logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B698C71E2520C60D353E5EBF19826464 /* smile_openweather_logo@3x.png */; };
+		C7ACB76C6A3CE7FC4D0C2EB8BF7CC09E /* Pods-GardenBuddyUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11055975398FFE2CB315C6A9F3C5EB3F /* Pods-GardenBuddyUITests-dummy.m */; };
+		C87B9162D97F39B17744165485A39B84 /* smile_sunrise@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 338AB82D48A0B0A0888E473FA8427D62 /* smile_sunrise@3x.png */; };
+		C952EA5E6C3800291DCE8BF6710AB639 /* smile_wind@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F5C8F6522A6AFEAD1294075D8DED149 /* smile_wind@2x.png */; };
+		CA285D2FAE4E225DDC7D8C0E848721F6 /* SmileWeatherForecastDayData.h in Headers */ = {isa = PBXBuildFile; fileRef = C1EA6931444B4C7DE8ECE5A0B9B4F4C8 /* SmileWeatherForecastDayData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA4603A964277B5BE36F05964EAD9838 /* Climacons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D265F034953374E007D5A5C5C3E90C14 /* Climacons.ttf */; };
+		D53E75B6268EECE3E8EE72CBB6FE3611 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE2020DF0EE69077BB97F29A59EAE935 /* Images.xcassets */; };
+		D5C40E702EAD3367D3E8E71D43FD78D6 /* SmileWeatherHourlyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 858A73CC7B0C24A9BA3AC2719B92FAB2 /* SmileWeatherHourlyCell.xib */; };
+		D5F3BF1F6A424BE755CFD29E826A12B5 /* Pods-GardenBuddyTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 937CEC9548AE230CF10B73003A75167F /* Pods-GardenBuddyTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6F500761421B4380140C238E3F1CC62 /* SmileWeather-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA28F78F48180F5118B2327A55F2066 /* SmileWeather-dummy.m */; };
+		DB276619F6940CD262F05F80CE44E098 /* SmileClimacons.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AC3C44DE4A54D42C76BD3750957AD72 /* SmileClimacons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E13FE1E56A7F0613A3422F641E1EC458 /* THDatePickerViewController.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = A5EFF4AAD5EF200FAF41AF262E14C09B /* THDatePickerViewController.h */; };
+		E1B6B11392EA209E1E80810E61BFCA3E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 873213AD300C7262805A2AC0A00CBE00 /* CoreLocation.framework */; };
+		F41EBB8553298CD952283F321D43136D /* SmileWeatherDemoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AD987648307967FB3DD5594D2E8A65 /* SmileWeatherDemoView.xib */; };
+		F87A4BD269EF3AA31B0F1736D1A45B44 /* NSString+SmileSubstring.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DD8D17C2B037663D5CE39CB6E38E1F4 /* NSString+SmileSubstring.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8CB4DC93227A5CEBBC1F3F5BD7DDC7D /* SmileWeatherForecastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57048361E798F84EC3B2183D39FF47F4 /* SmileWeatherForecastCell.xib */; };
+		FA6B05454ECBFCD3F208AF45CDB61B45 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5EA4173D9132633302051224670F459 /* QuartzCore.framework */; };
+		FE6A28B9A0C6637D828BE74BF211304C /* SmileWeatherDownLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = BE0CF7FFA088A999DE2B35859315BC56 /* SmileWeatherDownLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDF2B1A46A0E78EDA6E249DF5A07E15 /* SmileWeatherHourlyData.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F5C3E16C04CEA83EAF101D9EAAC8713 /* SmileWeatherHourlyData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		73565D702B32972B385A6148379000CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1892213B8242D18974553DCC80A3C3FB;
+			remoteInfo = KNSemiModalViewController_hons82;
+		};
+		9C4717A9F90610C7E626F655E14ED863 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 855ADC9013314ACBECE8D77A042C6BB4;
+			remoteInfo = THCalendarDatePicker;
+		};
+		C8CCE2A6EA1ACF85FDA53525BA2F1F14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9518A9F32FAC5C8205B4D7BE245166C;
+			remoteInfo = SwiftyJSON;
+		};
+		CF29828BBD14B5C2B6831A1BF26D7E20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A0126816B17965EB8FA57406596CB4D;
+			remoteInfo = SmileWeather;
+		};
+		DF6A477161501AE6E2E660A0CD9D442D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1892213B8242D18974553DCC80A3C3FB;
+			remoteInfo = KNSemiModalViewController_hons82;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		152DE7601B264B6EFC67A183221B449A /* Copy . Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/.";
+			dstSubfolderSpec = 16;
+			files = (
+				104C6FDA1CA8546D5C3D1AA568E0A315 /* NSDate+Difference.h in Copy . Public Headers */,
+				278C62FDF4EF86E7DC4395307C7D85A7 /* THDateDay.h in Copy . Public Headers */,
+				E13FE1E56A7F0613A3422F641E1EC458 /* THDatePickerViewController.h in Copy . Public Headers */,
+			);
+			name = "Copy . Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		07FB4321BD0C62398D48D423C6D7641E /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		0A9B3C0712B196E7EC074D90585DA3EC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D155FDB9BDA21665A027C59986A615C /* SmileLineLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SmileLineLayout.m; path = SmileWeather/Classes/SmileLineLayout.m; sourceTree = "<group>"; };
+		0F5C8F6522A6AFEAD1294075D8DED149 /* smile_wind@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "smile_wind@2x.png"; path = "SmileWeather/Assets/smile_wind@2x.png"; sourceTree = "<group>"; };
+		11055975398FFE2CB315C6A9F3C5EB3F /* Pods-GardenBuddyUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GardenBuddyUITests-dummy.m"; sourceTree = "<group>"; };
+		1466F48C06A08A2799DBD3F36DED6570 /* NSString+SmileSubstring.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+SmileSubstring.m"; path = "SmileWeather/Classes/NSString+SmileSubstring.m"; sourceTree = "<group>"; };
+		156DF4A234F2B00631A7488F013CED20 /* Pods-GardenBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GardenBuddy.release.xcconfig"; sourceTree = "<group>"; };
+		157E53923559B7FB41C9B82609E791FB /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		16E582E40212C0DB0FDD1E461239E8C9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		1D782BDF4692A1FF54605EE3B0D786A2 /* Pods_GardenBuddyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GardenBuddyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EF014DA54B8CDE6F183528B7BE98B0B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F5C3E16C04CEA83EAF101D9EAAC8713 /* SmileWeatherHourlyData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SmileWeatherHourlyData.h; path = SmileWeather/Classes/SmileWeatherHourlyData.h; sourceTree = "<group>"; };
+		1FDCB4EF0E99B02DA22080B9DDF4CEE3 /* SmileWeather-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SmileWeather-umbrella.h"; sourceTree = "<group>"; };
+		211894EF0D99E5A85898D6DC4989E4E9 /* smile_drop@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "smile_drop@3x.png"; path = "SmileWeather/Assets/smile_drop@3x.png"; sourceTree = "<group>"; };
+		2210CDE968076D3B97C9CF48B48CDEC1 /* smile_pressure@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "smile_pressure@3x.png"; path = "SmileWeather/Assets/smile_pressure@3x.png"; sourceTree = "<group>"; };
+		24B9016AC6FD022A24D9AB5A87B25094 /* SmileWeather.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SmileWeather.xcconfig; sourceTree = "<group>"; };
+		250955DC746AEFB26194146B29730ED9 /* THDatePickerViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = THDatePickerViewController.xib; path = THCalendarDatePicker/THDatePickerViewController.xib; sourceTree = "<group>"; };
+		29AB75FD9AD8C3BF3D5A80F3B601B2A5 /* SmileWeatherCurrentData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SmileWeatherCurrentData.m; path = SmileWeather/Classes/SmileWeatherCurrentData.m; sourceTree = "<group>"; };
+		2A8788A1102E0EC75038E964F377B396 /* NSDate+Difference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+Difference.h"; path = "THCalendarDatePicker/NSDate+Difference.h"; sourceTree = "<group>"; };
+		2F4EEACE12A3E2DFBB0ED7774D9B370E /* KNSemiModalViewController_hons82.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KNSemiModalViewController_hons82.modulemap; sourceTree = "<group>"; };
+		3313DE4F19659ADECC0E0E3873AFF733 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		338AB82D48A0B0A0888E473FA8427D62 /* smile_sunrise@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "smile_sunrise@3x.png"; path = "SmileWeather/Assets/smile_sunrise@3x.png"; sourceTree = "<group>"; };
+		351BFABC03DB19CC7D84F67CB5D34C7F /* Pods-GardenBuddy-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GardenBuddy-acknowledgements.plist"; sourceTree = "<group>"; };
+		35A2F506E41B1D9E2AB4DCD4EB4E3851 /* smile_openweather_logo@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "smile_openweather_logo@2x.png"; path = "SmileWeather/Assets/smile_openweather_logo@2x.png"; sourceTree = "<group>"; };
+		404ADE11323971E8B55E9F584895A0E6 /* Pods-GardenBuddyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GardenBuddyTests.release.xcconfig"; sourceTree = "<group>"; };
+		413022FA14240E7128F03CDD513ECE91 /* Pods-GardenBuddyTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GardenBuddyTests-dummy.m"; sourceTree = "<group>"; };
+		43AD987648307967FB3DD5594D2E8A65 /* SmileWeatherDemoView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = SmileWeatherDemoView.xib; path = SmileWeather/Assets/SmileWeatherDemoView.xib; sourceTree = "<group>"; };
+		45D229915C6086730C670BEB8C85EC9D /* THDateDay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = THDateDay.h; path = THCalendarDatePicker/THDateDay.h; sourceTree = "<group>"; };
+		46997417A74977CA33E0EE88484B87B7 /* Pods-GardenBuddyUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GardenBuddyUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		47791A59B05D0714079E39E39F4DCDE1 /* smile_sunglass@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "smile_sunglass@3x.png"; path = "SmileWeather/Assets/smile_sunglass@3x.png"; sourceTree = "<group>"; };
+		47B7D2A2C31B1C604A5603ED2181B1DD /* Pods-GardenBuddy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GardenBuddy-umbrella.h"; sourceTree = "<group>"; };
+		49DF7E5D80BD8999D399B55193A96E3C /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		4A9C933569D398993E8812B1C4A89015 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		4B6FD890956945287E002E16C98F8366 /* smile_wind@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "smile_wind@3x.png"; path = "SmileWeather/Assets/smile_wind@3x.png"; sourceTree = "<group>"; };
+		4CE5DFD3C53E4D1FC23915574800457F /* Pods-GardenBuddyUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GardenBuddyUITests-umbrella.h"; sourceTree = "<group>"; };
+		4E441BF07605B1E094FB16CA501188A5 /* THCalendarDatePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = THCalendarDatePicker.modulemap; sourceTree = "<group>"; };
+		4E8D450F68C8A65739B3A955EFF3D19B /* Pods-GardenBuddy-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GardenBuddy-acknowledgements.markdown"; sourceTree = "<group>"; };
+		546EF8798EFFBBACBD5DC0C915B16BE5 /* NSDate+Difference.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Difference.m"; path = "THCalendarDatePicker/NSDate+Difference.m"; sourceTree = "<group>"; };
+		54BCD115B7F7C1205DEE8D131CB9BC0C /* UIViewController+KNSemiModal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+KNSemiModal.h"; path = "Source/UIViewController+KNSemiModal.h"; sourceTree = "<group>"; };
+		555C7A0925F96123FEB8A8EFA695D901 /* smile_umbrella@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "smile_umbrella@2x.png"; path = "SmileWeather/Assets/smile_umbrella@2x.png"; sourceTree = "<group>"; };
+		5656B7F95CC186AC91E7304E6E92B6EF /* SmileWeatherOneDayData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SmileWeatherOneDayData.m; path = SmileWeather/Classes/SmileWeatherOneDayData.m; sourceTree = "<group>"; };
+		57048361E798F84EC3B2183D39FF47F4 /* SmileWeatherForecastCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = SmileWeatherForecastCell.xib; path = SmileWeather/Assets/SmileWeatherForecastCell.xib; sourceTree = "<group>"; };
+		5A259679996835F4BDAEC261F24DDED2 /* Pods-GardenBuddyTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GardenBuddyTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5AC3C44DE4A54D42C76BD3750957AD72 /* SmileClimacons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SmileClimacons.h; path = SmileWeather/Classes/SmileClimacons.h; sourceTree = "<group>"; };
+		5D71AD4B9170A46C8530CC5CCE925A5C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		680F5AA1989CC174CAF5DE259C6DD701 /* UIViewController+KNSemiModal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+KNSemiModal.m"; path = "Source/UIViewController+KNSemiModal.m"; sourceTree = "<group>"; };
+		68D54DBC1425815F08509854FB4934E7 /* Pods-GardenBuddyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GardenBuddyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6C33878FEB29EE767F307B6A73AB067D /* Pods-GardenBuddyTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GardenBuddyTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6DB3D6E18602C94FE739566C63B64982 /* Pods-GardenBuddy-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GardenBuddy-resources.sh"; sourceTree = "<group>"; };
+		6DC890E282BB24629399CA7172B01051 /* smile_wunder_logo@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "smile_wunder_logo@2x.png"; path = "SmileWeather/Assets/smile_wunder_logo@2x.png"; sourceTree = "<group>"; };
+		6DD8D17C2B037663D5CE39CB6E38E1F4 /* NSString+SmileSubstring.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+SmileSubstring.h"; path = "SmileWeather/Classes/NSString+SmileSubstring.h"; sourceTree = "<group>"; };
+		6EFB3EF89A55A18FCD0271ED3B0C9243 /* THCalendarDatePicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = THCalendarDatePicker.xcconfig; sourceTree = "<group>"; };
+		754BF210FE635583F273AE6279D2F6CB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7672FC77E2AA72B4076E52444F6BBE88 /* Pods-GardenBuddy-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GardenBuddy-frameworks.sh"; sourceTree = "<group>"; };
+		79E1FE89EC0D3FDAC72A8051F3EB4E19 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Headers/Firebase.h; sourceTree = "<group>"; };
+		7BB5A7B012592355632BFB072E0628E0 /* SmileWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SmileWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FB45EAC0587E9D71B4ECE073953B994 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FF7CC7D36696C2A5BF0E832D44629B1 /* KNSemiModalViewController_hons82-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KNSemiModalViewController_hons82-dummy.m"; sourceTree = "<group>"; };
+		80F52D2D96F3641464EE3A1E420D85D2 /* THDatePickerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = THDatePickerViewController.m; path = THCalendarDatePicker/THDatePickerViewController.m; sourceTree = "<group>"; };
+		81B67C9523C3F8EEDD94477546BCE80E /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		852713D09164C15CD9113BF6D833F7C8 /* THDateDay.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = THDateDay.xib; path = THCalendarDatePicker/THDateDay.xib; sourceTree = "<group>"; };
+		85283B0BB3612AF18D03697BD5CB3FEA /* smile_sunset@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "smile_sunset@3x.png"; path = "SmileWeather/Assets/smile_sunset@3x.png"; sourceTree = "<group>"; };
+		858A73CC7B0C24A9BA3AC2719B92FAB2 /* SmileWeatherHourlyCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = SmileWeatherHourlyCell.xib; path = SmileWeather/Assets/SmileWeatherHourlyCell.xib; sourceTree = "<group>"; };
+		873213AD300C7262805A2AC0A00CBE00 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		88358B6C8D119565D1C4534DB3899DAC /* SmileWeatherOneDayData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SmileWeatherOneDayData.h; path = SmileWeather/Classes/SmileWeatherOneDayData.h; sourceTree = "<group>"; };
+		889C900D061A563EA35C9E2AD1F48B89 /* KNSemiModalViewController_hons82-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KNSemiModalViewController_hons82-umbrella.h"; sourceTree = "<group>"; };
+		8C5F99C9A7885D60544ECA1DB6F97512 /* smile_sunglass@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "smile_sunglass@2x.png"; path = "SmileWeather/Assets/smile_sunglass@2x.png"; sourceTree = "<group>"; };
+		8C8C73FCC3DE6C4CC20B2121AB95F96D /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		8E94221F3302195BCF2DB54BADC90D9B /* smile_umbrella@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "smile_umbrella@3x.png"; path = "SmileWeather/Assets/smile_umbrella@3x.png"; sourceTree = "<group>"; };
+		91E7CC28042A3153BFF0169DA2CFA379 /* THDateDay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = THDateDay.m; path = THCalendarDatePicker/THDateDay.m; sourceTree = "<group>"; };
+		937CEC9548AE230CF10B73003A75167F /* Pods-GardenBuddyTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GardenBuddyTests-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94B157163C12E517521F62F52C130678 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		954B4FF0EA2349B95449AA929A4258E0 /* KNSemiModalViewController_hons82-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KNSemiModalViewController_hons82-prefix.pch"; sourceTree = "<group>"; };
+		959D790DA6FA1311D22E332F9A372DB0 /* SmileWeatherCurrentData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SmileWeatherCurrentData.h; path = SmileWeather/Classes/SmileWeatherCurrentData.h; sourceTree = "<group>"; };
+		95A01E75A311CCEC352F73FE34CE0C8F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		966B4C8D11A640851622D44688A1FA48 /* KNSemiModalViewController_hons82.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KNSemiModalViewController_hons82.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98AFE3F8C96B8C4E7B975903D107C871 /* SmileWeatherData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SmileWeatherData.h; path = SmileWeather/Classes/SmileWeatherData.h; sourceTree = "<group>"; };
+		98D5ED194C1CF5087D94A69A09188AC5 /* Pods-GardenBuddyUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GardenBuddyUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		990FC6F12278A1F6BF634CBB341076D5 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Headers/Public/FIRInstanceID.h; sourceTree = "<group>"; };
+		9A0F7BD70960468ED463595ABC7825C9 /* Pods-GardenBuddy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GardenBuddy-dummy.m"; sourceTree = "<group>"; };
+		9BA28F78F48180F5118B2327A55F2066 /* SmileWeather-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SmileWeather-dummy.m"; sourceTree = "<group>"; };
+		9CFFF8FFF8535A947BA3E09E65AFA59D /* THCalendarDatePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "THCalendarDatePicker-dummy.m"; sourceTree = "<group>"; };
+		9F06E8969877239921FEA10178C75FE8 /* smile_pressure@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "smile_pressure@2x.png"; path = "SmileWeather/Assets/smile_pressure@2x.png"; sourceTree = "<group>"; };
+		A11D50B34433D3915CEA6F295626B426 /* SmileWeatherDemoVC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SmileWeatherDemoVC.h; path = SmileWeather/Classes/SmileWeatherDemoVC.h; sourceTree = "<group>"; };
+		A5EFF4AAD5EF200FAF41AF262E14C09B /* THDatePickerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = THDatePickerViewController.h; path = THCalendarDatePicker/THDatePickerViewController.h; sourceTree = "<group>"; };
+		A948E368E277E5A8441A800FE555CB14 /* Pods-GardenBuddyUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GardenBuddyUITests-resources.sh"; sourceTree = "<group>"; };
+		AB334AF3DF594D1DFC0883B64BAEC10E /* Pods-GardenBuddyTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GardenBuddyTests-frameworks.sh"; sourceTree = "<group>"; };
+		AD618124301B37991617FDB626CFA347 /* smile_sunrise@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "smile_sunrise@2x.png"; path = "SmileWeather/Assets/smile_sunrise@2x.png"; sourceTree = "<group>"; };
+		ADFDA252507D4393CD21496E40F42AB1 /* Pods-GardenBuddyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GardenBuddyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AFCE4476C8D87E19618BB9E8BE79B096 /* Pods-GardenBuddyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GardenBuddyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B19E983060E5BF823EB472361FACC0E1 /* Pods-GardenBuddyTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GardenBuddyTests-resources.sh"; sourceTree = "<group>"; };
+		B698C71E2520C60D353E5EBF19826464 /* smile_openweather_logo@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "smile_openweather_logo@3x.png"; path = "SmileWeather/Assets/smile_openweather_logo@3x.png"; sourceTree = "<group>"; };
+		BA7D544E5B8DCA04BCC4554A1367A1CF /* SmileWeatherHourlyData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SmileWeatherHourlyData.m; path = SmileWeather/Classes/SmileWeatherHourlyData.m; sourceTree = "<group>"; };
+		BE0CF7FFA088A999DE2B35859315BC56 /* SmileWeatherDownLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SmileWeatherDownLoader.h; path = SmileWeather/Classes/SmileWeatherDownLoader.h; sourceTree = "<group>"; };
+		BE2020DF0EE69077BB97F29A59EAE935 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = THCalendarDatePicker/Images.xcassets; sourceTree = "<group>"; };
+		BE4331D153B4957BA7B92C0F2A51E414 /* SmileLineLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SmileLineLayout.h; path = SmileWeather/Classes/SmileLineLayout.h; sourceTree = "<group>"; };
+		C1EA6931444B4C7DE8ECE5A0B9B4F4C8 /* SmileWeatherForecastDayData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SmileWeatherForecastDayData.h; path = SmileWeather/Classes/SmileWeatherForecastDayData.h; sourceTree = "<group>"; };
+		C43E2DBEECD347C0836701488290EA47 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5320FB856992214E1542B4DDE680E76 /* Pods-GardenBuddyUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GardenBuddyUITests.modulemap"; sourceTree = "<group>"; };
+		C53317D0E9041817A8405A37355539D9 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		C6E8F271DF4B0107F9C14F26754327D4 /* smile_wunder_logo@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "smile_wunder_logo@3x.png"; path = "SmileWeather/Assets/smile_wunder_logo@3x.png"; sourceTree = "<group>"; };
+		CA9AC42B99EFDF626D01E7D928CE2B7D /* THCalendarDatePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "THCalendarDatePicker-prefix.pch"; sourceTree = "<group>"; };
+		CAA192125D6B56ABBDF0F2B64BD04D68 /* SmileWeatherForecastDayData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SmileWeatherForecastDayData.m; path = SmileWeather/Classes/SmileWeatherForecastDayData.m; sourceTree = "<group>"; };
+		CBE4B3B124AD8578FB032930CDA41D1B /* Pods-GardenBuddy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GardenBuddy.modulemap"; sourceTree = "<group>"; };
+		CC928ABEC8908DAD2E44DD5CFD507246 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCD3E38C1928FFC4886100CE70FB0A65 /* Pods_GardenBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GardenBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCE248E466BB41A8EB6380CF64704EA6 /* SmileWeatherData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SmileWeatherData.m; path = SmileWeather/Classes/SmileWeatherData.m; sourceTree = "<group>"; };
+		CD8FBC6944E4091F3E441CF66DBFA181 /* THCalendarDatePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = THCalendarDatePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0431731B4432AB61A505610E86398F1 /* SmileWeather-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SmileWeather-prefix.pch"; sourceTree = "<group>"; };
+		D1AEC5E8282A98F48C1C126A46238D21 /* Pods-GardenBuddyTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GardenBuddyTests.modulemap"; sourceTree = "<group>"; };
+		D265F034953374E007D5A5C5C3E90C14 /* Climacons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = Climacons.ttf; path = SmileWeather/Assets/Climacons.ttf; sourceTree = "<group>"; };
+		D5C3AA002767E1EF46EE52F03B48CA66 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		D6B0EBCAD5272980C13DDE30635D17F7 /* smile_drop@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "smile_drop@2x.png"; path = "SmileWeather/Assets/smile_drop@2x.png"; sourceTree = "<group>"; };
+		D798AE7562E8FC5EC368B2A2084B05D3 /* smile_sunset@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "smile_sunset@2x.png"; path = "SmileWeather/Assets/smile_sunset@2x.png"; sourceTree = "<group>"; };
+		DAA0A802E42FF03145C007BCEC56DED7 /* Pods-GardenBuddyUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GardenBuddyUITests-frameworks.sh"; sourceTree = "<group>"; };
+		E1F5D821D92D4B69DD2DC7C4C6266296 /* Pods_GardenBuddyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GardenBuddyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4A369DFD7C91B41277947D3BFC4376B /* SmileWeatherDownLoader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SmileWeatherDownLoader.m; path = SmileWeather/Classes/SmileWeatherDownLoader.m; sourceTree = "<group>"; };
+		E5C7C801BEB9FE143E8D9DC42FF3F6C4 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		E5DD6BA4B116200C5F7E37C792BDFC50 /* SmileWeatherDemoVC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SmileWeatherDemoVC.m; path = SmileWeather/Classes/SmileWeatherDemoVC.m; sourceTree = "<group>"; };
+		E5EA4173D9132633302051224670F459 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		ED56A303722F15DD79508E994B7689E4 /* THCalendarDatePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "THCalendarDatePicker-umbrella.h"; sourceTree = "<group>"; };
+		F21160DE6EAF4782A70B99E6F64C6A2C /* KNSemiModalViewController_hons82.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KNSemiModalViewController_hons82.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F28135866FA3349F4AF80C1F66851CE6 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		F910C551C167896B06C1CC5A478E3942 /* KNSemiModalViewController_hons82.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KNSemiModalViewController_hons82.xcconfig; sourceTree = "<group>"; };
+		F92F8AED675E45BA6268D49C44259A16 /* SmileWeatherPropertyCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = SmileWeatherPropertyCell.xib; path = SmileWeather/Assets/SmileWeatherPropertyCell.xib; sourceTree = "<group>"; };
+		FB8AB9BDC34608AE6A623D251D5966B4 /* SmileWeather.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SmileWeather.modulemap; sourceTree = "<group>"; };
+		FD7162FBDEB7FADC807430C5087AB86E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEEE41D108E8F5DB2716983F4DAB504B /* Pods-GardenBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GardenBuddy.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08C027E2E05424F0ED8BF78E549977E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1B6B11392EA209E1E80810E61BFCA3E /* CoreLocation.framework in Frameworks */,
+				01706960FC45B3EFAA71A73C86EEFC4B /* Foundation.framework in Frameworks */,
+				31E6E4CCDED327276A8B8FA9F730DA06 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA2430EC5468FE0694F22DA445F54F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4524853D96BC37CFD4C941220E9F3350 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0FF89E27463B687A209FC668151D0EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				918393F069C65D65EF60D32072E62964 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8C3B032E58E4EB1358747C10DC1493B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				708A6193646E3DB2847B8BF35EF4355C /* Foundation.framework in Frameworks */,
+				50605412241D3B1EEB8A1B2777BF5ADF /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B225893A48FED46EB2B47BF4FDF87FF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DEC90C6005B342D712C7B675E897D52 /* Foundation.framework in Frameworks */,
+				B9BF6F74451EDD5A0060E1FAE56F031D /* KNSemiModalViewController_hons82.framework in Frameworks */,
+				FA6B05454ECBFCD3F208AF45CDB61B45 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1510AE64F02C047ACF7932D5753D947 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				955E78BE1C794262B709C8E0B7CA58A5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF0A6478AD301A5D1700BC6909FB9563 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				385847261D2B514C6502FDB437BDE5C4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B3859D6624B042B38C887D9B7E54D02 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				873213AD300C7262805A2AC0A00CBE00 /* CoreLocation.framework */,
+				95A01E75A311CCEC352F73FE34CE0C8F /* Foundation.framework */,
+				E5EA4173D9132633302051224670F459 /* QuartzCore.framework */,
+				16E582E40212C0DB0FDD1E461239E8C9 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		0CA9D3A88C46A5A4E6702844FD60AF4C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D265F034953374E007D5A5C5C3E90C14 /* Climacons.ttf */,
+				D6B0EBCAD5272980C13DDE30635D17F7 /* smile_drop@2x.png */,
+				211894EF0D99E5A85898D6DC4989E4E9 /* smile_drop@3x.png */,
+				35A2F506E41B1D9E2AB4DCD4EB4E3851 /* smile_openweather_logo@2x.png */,
+				B698C71E2520C60D353E5EBF19826464 /* smile_openweather_logo@3x.png */,
+				9F06E8969877239921FEA10178C75FE8 /* smile_pressure@2x.png */,
+				2210CDE968076D3B97C9CF48B48CDEC1 /* smile_pressure@3x.png */,
+				8C5F99C9A7885D60544ECA1DB6F97512 /* smile_sunglass@2x.png */,
+				47791A59B05D0714079E39E39F4DCDE1 /* smile_sunglass@3x.png */,
+				AD618124301B37991617FDB626CFA347 /* smile_sunrise@2x.png */,
+				338AB82D48A0B0A0888E473FA8427D62 /* smile_sunrise@3x.png */,
+				D798AE7562E8FC5EC368B2A2084B05D3 /* smile_sunset@2x.png */,
+				85283B0BB3612AF18D03697BD5CB3FEA /* smile_sunset@3x.png */,
+				555C7A0925F96123FEB8A8EFA695D901 /* smile_umbrella@2x.png */,
+				8E94221F3302195BCF2DB54BADC90D9B /* smile_umbrella@3x.png */,
+				0F5C8F6522A6AFEAD1294075D8DED149 /* smile_wind@2x.png */,
+				4B6FD890956945287E002E16C98F8366 /* smile_wind@3x.png */,
+				6DC890E282BB24629399CA7172B01051 /* smile_wunder_logo@2x.png */,
+				C6E8F271DF4B0107F9C14F26754327D4 /* smile_wunder_logo@3x.png */,
+				43AD987648307967FB3DD5594D2E8A65 /* SmileWeatherDemoView.xib */,
+				57048361E798F84EC3B2183D39FF47F4 /* SmileWeatherForecastCell.xib */,
+				858A73CC7B0C24A9BA3AC2719B92FAB2 /* SmileWeatherHourlyCell.xib */,
+				F92F8AED675E45BA6268D49C44259A16 /* SmileWeatherPropertyCell.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1039132C0F09D785524BAED073D083E0 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				07FB4321BD0C62398D48D423C6D7641E /* SwiftyJSON.swift */,
+				2DD0D8F48BD067855A13719CAE178E43 /* Support Files */,
+			);
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		19D593E4CE2C53CD9325360448B89846 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BE2020DF0EE69077BB97F29A59EAE935 /* Images.xcassets */,
+				852713D09164C15CD9113BF6D833F7C8 /* THDateDay.xib */,
+				250955DC746AEFB26194146B29730ED9 /* THDatePickerViewController.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1F274D56C80992B5247EDBC76F5F8DB9 /* GoogleSymbolUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				E7B8AECCCBDAD697F1B47E08A3F8ABB3 /* Frameworks */,
+			);
+			path = GoogleSymbolUtilities;
+			sourceTree = "<group>";
+		};
+		26D2F158FFB1B8891032811BF8C98FBA /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				C8B1AB4D9A93A2D9F13A13BDCBE8E1F3 /* Analytics */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		2DD0D8F48BD067855A13719CAE178E43 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1EF014DA54B8CDE6F183528B7BE98B0B /* Info.plist */,
+				3313DE4F19659ADECC0E0E3873AFF733 /* SwiftyJSON.modulemap */,
+				49DF7E5D80BD8999D399B55193A96E3C /* SwiftyJSON.xcconfig */,
+				8C8C73FCC3DE6C4CC20B2121AB95F96D /* SwiftyJSON-dummy.m */,
+				F28135866FA3349F4AF80C1F66851CE6 /* SwiftyJSON-prefix.pch */,
+				D5C3AA002767E1EF46EE52F03B48CA66 /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		2E934F8B0A872F4E1C4293AF74C7E3E1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7FB45EAC0587E9D71B4ECE073953B994 /* Info.plist */,
+				2F4EEACE12A3E2DFBB0ED7774D9B370E /* KNSemiModalViewController_hons82.modulemap */,
+				F910C551C167896B06C1CC5A478E3942 /* KNSemiModalViewController_hons82.xcconfig */,
+				7FF7CC7D36696C2A5BF0E832D44629B1 /* KNSemiModalViewController_hons82-dummy.m */,
+				954B4FF0EA2349B95449AA929A4258E0 /* KNSemiModalViewController_hons82-prefix.pch */,
+				889C900D061A563EA35C9E2AD1F48B89 /* KNSemiModalViewController_hons82-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KNSemiModalViewController_hons82";
+			sourceTree = "<group>";
+		};
+		37AAD2261B4CDAA0298A7A4B8D6488A3 /* FirebaseDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				84DF706DEC0B6106DEF85C71DA7ACEA7 /* Frameworks */,
+			);
+			path = FirebaseDatabase;
+			sourceTree = "<group>";
+		};
+		4D8876E1BF2FFE10CDDB2802F1D7649D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94B157163C12E517521F62F52C130678 /* FirebaseInstanceID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56AE752423C282F58C98C7BAB6FACFF4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				606FEF24A4F41C3084A7DC4FCA438AEE /* Pods-GardenBuddy */,
+				DBC9C5784650FEEE8B391AF0866EDFC6 /* Pods-GardenBuddyTests */,
+				FFB2BFE981C1DD27D26C92DBDA80906B /* Pods-GardenBuddyUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5A2309DA9C689C9868AB69A107AA1AE1 /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				731D80DC808B7AE375340DF60016AEC9 /* Frameworks */,
+			);
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		606FEF24A4F41C3084A7DC4FCA438AEE /* Pods-GardenBuddy */ = {
+			isa = PBXGroup;
+			children = (
+				754BF210FE635583F273AE6279D2F6CB /* Info.plist */,
+				CBE4B3B124AD8578FB032930CDA41D1B /* Pods-GardenBuddy.modulemap */,
+				4E8D450F68C8A65739B3A955EFF3D19B /* Pods-GardenBuddy-acknowledgements.markdown */,
+				351BFABC03DB19CC7D84F67CB5D34C7F /* Pods-GardenBuddy-acknowledgements.plist */,
+				9A0F7BD70960468ED463595ABC7825C9 /* Pods-GardenBuddy-dummy.m */,
+				7672FC77E2AA72B4076E52444F6BBE88 /* Pods-GardenBuddy-frameworks.sh */,
+				6DB3D6E18602C94FE739566C63B64982 /* Pods-GardenBuddy-resources.sh */,
+				47B7D2A2C31B1C604A5603ED2181B1DD /* Pods-GardenBuddy-umbrella.h */,
+				FEEE41D108E8F5DB2716983F4DAB504B /* Pods-GardenBuddy.debug.xcconfig */,
+				156DF4A234F2B00631A7488F013CED20 /* Pods-GardenBuddy.release.xcconfig */,
+			);
+			name = "Pods-GardenBuddy";
+			path = "Target Support Files/Pods-GardenBuddy";
+			sourceTree = "<group>";
+		};
+		6B566FCFF93A6C03353E40F7CA8CC3C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F21160DE6EAF4782A70B99E6F64C6A2C /* KNSemiModalViewController_hons82.framework */,
+				CCD3E38C1928FFC4886100CE70FB0A65 /* Pods_GardenBuddy.framework */,
+				E1F5D821D92D4B69DD2DC7C4C6266296 /* Pods_GardenBuddyTests.framework */,
+				1D782BDF4692A1FF54605EE3B0D786A2 /* Pods_GardenBuddyUITests.framework */,
+				7BB5A7B012592355632BFB072E0628E0 /* SmileWeather.framework */,
+				CC928ABEC8908DAD2E44DD5CFD507246 /* SwiftyJSON.framework */,
+				CD8FBC6944E4091F3E441CF66DBFA181 /* THCalendarDatePicker.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		731D80DC808B7AE375340DF60016AEC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				157E53923559B7FB41C9B82609E791FB /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		73DFA3FB30C33B1034AE10E690F6924C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				966B4C8D11A640851622D44688A1FA48 /* KNSemiModalViewController_hons82.framework */,
+				0B3859D6624B042B38C887D9B7E54D02 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				73DFA3FB30C33B1034AE10E690F6924C /* Frameworks */,
+				CFDD79FDE39E49B938833440ABF69D6F /* Pods */,
+				6B566FCFF93A6C03353E40F7CA8CC3C6 /* Products */,
+				56AE752423C282F58C98C7BAB6FACFF4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		84DF706DEC0B6106DEF85C71DA7ACEA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5C7C801BEB9FE143E8D9DC42FF3F6C4 /* FirebaseDatabase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95B838301E5415AC48BA6862FC2FD70E /* THCalendarDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				2A8788A1102E0EC75038E964F377B396 /* NSDate+Difference.h */,
+				546EF8798EFFBBACBD5DC0C915B16BE5 /* NSDate+Difference.m */,
+				45D229915C6086730C670BEB8C85EC9D /* THDateDay.h */,
+				91E7CC28042A3153BFF0169DA2CFA379 /* THDateDay.m */,
+				A5EFF4AAD5EF200FAF41AF262E14C09B /* THDatePickerViewController.h */,
+				80F52D2D96F3641464EE3A1E420D85D2 /* THDatePickerViewController.m */,
+				19D593E4CE2C53CD9325360448B89846 /* Resources */,
+				BE4FEB631688188AF4F5069AF1482786 /* Support Files */,
+			);
+			path = THCalendarDatePicker;
+			sourceTree = "<group>";
+		};
+		95DF22C188D008DC7E3518279B78BAA6 /* GoogleInterchangeUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				A04BE834BE30C6FB2AB99DC925F2E231 /* Frameworks */,
+			);
+			path = GoogleInterchangeUtilities;
+			sourceTree = "<group>";
+		};
+		A04BE834BE30C6FB2AB99DC925F2E231 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C53317D0E9041817A8405A37355539D9 /* GoogleInterchangeUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A937DB0EC698F5AE4B89E5FD3DB86A2E /* KNSemiModalViewController_hons82 */ = {
+			isa = PBXGroup;
+			children = (
+				54BCD115B7F7C1205DEE8D131CB9BC0C /* UIViewController+KNSemiModal.h */,
+				680F5AA1989CC174CAF5DE259C6DD701 /* UIViewController+KNSemiModal.m */,
+				2E934F8B0A872F4E1C4293AF74C7E3E1 /* Support Files */,
+			);
+			path = KNSemiModalViewController_hons82;
+			sourceTree = "<group>";
+		};
+		B119F4CBB3B59F4516FCDF2DE20204BE /* GoogleUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				E8251337F51555059B6F1DA964CEDC11 /* Frameworks */,
+			);
+			path = GoogleUtilities;
+			sourceTree = "<group>";
+		};
+		BE4FEB631688188AF4F5069AF1482786 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A9B3C0712B196E7EC074D90585DA3EC /* Info.plist */,
+				4E441BF07605B1E094FB16CA501188A5 /* THCalendarDatePicker.modulemap */,
+				6EFB3EF89A55A18FCD0271ED3B0C9243 /* THCalendarDatePicker.xcconfig */,
+				9CFFF8FFF8535A947BA3E09E65AFA59D /* THCalendarDatePicker-dummy.m */,
+				CA9AC42B99EFDF626D01E7D928CE2B7D /* THCalendarDatePicker-prefix.pch */,
+				ED56A303722F15DD79508E994B7689E4 /* THCalendarDatePicker-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/THCalendarDatePicker";
+			sourceTree = "<group>";
+		};
+		C429CCD4434928962E344506EAF9C359 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C43E2DBEECD347C0836701488290EA47 /* Info.plist */,
+				FB8AB9BDC34608AE6A623D251D5966B4 /* SmileWeather.modulemap */,
+				24B9016AC6FD022A24D9AB5A87B25094 /* SmileWeather.xcconfig */,
+				9BA28F78F48180F5118B2327A55F2066 /* SmileWeather-dummy.m */,
+				D0431731B4432AB61A505610E86398F1 /* SmileWeather-prefix.pch */,
+				1FDCB4EF0E99B02DA22080B9DDF4CEE3 /* SmileWeather-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SmileWeather";
+			sourceTree = "<group>";
+		};
+		C8B1AB4D9A93A2D9F13A13BDCBE8E1F3 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FE89EC0D3FDAC72A8051F3EB4E19 /* Firebase.h */,
+			);
+			name = Analytics;
+			sourceTree = "<group>";
+		};
+		CD717F032253DACDF5914F7D0A7DFE7F /* FirebaseInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				990FC6F12278A1F6BF634CBB341076D5 /* FIRInstanceID.h */,
+				4D8876E1BF2FFE10CDDB2802F1D7649D /* Frameworks */,
+			);
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		CFDD79FDE39E49B938833440ABF69D6F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26D2F158FFB1B8891032811BF8C98FBA /* Firebase */,
+				5A2309DA9C689C9868AB69A107AA1AE1 /* FirebaseAnalytics */,
+				37AAD2261B4CDAA0298A7A4B8D6488A3 /* FirebaseDatabase */,
+				CD717F032253DACDF5914F7D0A7DFE7F /* FirebaseInstanceID */,
+				95DF22C188D008DC7E3518279B78BAA6 /* GoogleInterchangeUtilities */,
+				1F274D56C80992B5247EDBC76F5F8DB9 /* GoogleSymbolUtilities */,
+				B119F4CBB3B59F4516FCDF2DE20204BE /* GoogleUtilities */,
+				A937DB0EC698F5AE4B89E5FD3DB86A2E /* KNSemiModalViewController_hons82 */,
+				E499F573C0A43A524FA04E44FAD0D75F /* SmileWeather */,
+				1039132C0F09D785524BAED073D083E0 /* SwiftyJSON */,
+				95B838301E5415AC48BA6862FC2FD70E /* THCalendarDatePicker */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DBC9C5784650FEEE8B391AF0866EDFC6 /* Pods-GardenBuddyTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD7162FBDEB7FADC807430C5087AB86E /* Info.plist */,
+				D1AEC5E8282A98F48C1C126A46238D21 /* Pods-GardenBuddyTests.modulemap */,
+				5A259679996835F4BDAEC261F24DDED2 /* Pods-GardenBuddyTests-acknowledgements.markdown */,
+				6C33878FEB29EE767F307B6A73AB067D /* Pods-GardenBuddyTests-acknowledgements.plist */,
+				413022FA14240E7128F03CDD513ECE91 /* Pods-GardenBuddyTests-dummy.m */,
+				AB334AF3DF594D1DFC0883B64BAEC10E /* Pods-GardenBuddyTests-frameworks.sh */,
+				B19E983060E5BF823EB472361FACC0E1 /* Pods-GardenBuddyTests-resources.sh */,
+				937CEC9548AE230CF10B73003A75167F /* Pods-GardenBuddyTests-umbrella.h */,
+				ADFDA252507D4393CD21496E40F42AB1 /* Pods-GardenBuddyTests.debug.xcconfig */,
+				404ADE11323971E8B55E9F584895A0E6 /* Pods-GardenBuddyTests.release.xcconfig */,
+			);
+			name = "Pods-GardenBuddyTests";
+			path = "Target Support Files/Pods-GardenBuddyTests";
+			sourceTree = "<group>";
+		};
+		E499F573C0A43A524FA04E44FAD0D75F /* SmileWeather */ = {
+			isa = PBXGroup;
+			children = (
+				6DD8D17C2B037663D5CE39CB6E38E1F4 /* NSString+SmileSubstring.h */,
+				1466F48C06A08A2799DBD3F36DED6570 /* NSString+SmileSubstring.m */,
+				5AC3C44DE4A54D42C76BD3750957AD72 /* SmileClimacons.h */,
+				BE4331D153B4957BA7B92C0F2A51E414 /* SmileLineLayout.h */,
+				0D155FDB9BDA21665A027C59986A615C /* SmileLineLayout.m */,
+				959D790DA6FA1311D22E332F9A372DB0 /* SmileWeatherCurrentData.h */,
+				29AB75FD9AD8C3BF3D5A80F3B601B2A5 /* SmileWeatherCurrentData.m */,
+				98AFE3F8C96B8C4E7B975903D107C871 /* SmileWeatherData.h */,
+				CCE248E466BB41A8EB6380CF64704EA6 /* SmileWeatherData.m */,
+				A11D50B34433D3915CEA6F295626B426 /* SmileWeatherDemoVC.h */,
+				E5DD6BA4B116200C5F7E37C792BDFC50 /* SmileWeatherDemoVC.m */,
+				BE0CF7FFA088A999DE2B35859315BC56 /* SmileWeatherDownLoader.h */,
+				E4A369DFD7C91B41277947D3BFC4376B /* SmileWeatherDownLoader.m */,
+				C1EA6931444B4C7DE8ECE5A0B9B4F4C8 /* SmileWeatherForecastDayData.h */,
+				CAA192125D6B56ABBDF0F2B64BD04D68 /* SmileWeatherForecastDayData.m */,
+				1F5C3E16C04CEA83EAF101D9EAAC8713 /* SmileWeatherHourlyData.h */,
+				BA7D544E5B8DCA04BCC4554A1367A1CF /* SmileWeatherHourlyData.m */,
+				88358B6C8D119565D1C4534DB3899DAC /* SmileWeatherOneDayData.h */,
+				5656B7F95CC186AC91E7304E6E92B6EF /* SmileWeatherOneDayData.m */,
+				0CA9D3A88C46A5A4E6702844FD60AF4C /* Resources */,
+				C429CCD4434928962E344506EAF9C359 /* Support Files */,
+			);
+			path = SmileWeather;
+			sourceTree = "<group>";
+		};
+		E7B8AECCCBDAD697F1B47E08A3F8ABB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81B67C9523C3F8EEDD94477546BCE80E /* GoogleSymbolUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8251337F51555059B6F1DA964CEDC11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A9C933569D398993E8812B1C4A89015 /* GoogleUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFB2BFE981C1DD27D26C92DBDA80906B /* Pods-GardenBuddyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5D71AD4B9170A46C8530CC5CCE925A5C /* Info.plist */,
+				C5320FB856992214E1542B4DDE680E76 /* Pods-GardenBuddyUITests.modulemap */,
+				46997417A74977CA33E0EE88484B87B7 /* Pods-GardenBuddyUITests-acknowledgements.markdown */,
+				98D5ED194C1CF5087D94A69A09188AC5 /* Pods-GardenBuddyUITests-acknowledgements.plist */,
+				11055975398FFE2CB315C6A9F3C5EB3F /* Pods-GardenBuddyUITests-dummy.m */,
+				DAA0A802E42FF03145C007BCEC56DED7 /* Pods-GardenBuddyUITests-frameworks.sh */,
+				A948E368E277E5A8441A800FE555CB14 /* Pods-GardenBuddyUITests-resources.sh */,
+				4CE5DFD3C53E4D1FC23915574800457F /* Pods-GardenBuddyUITests-umbrella.h */,
+				68D54DBC1425815F08509854FB4934E7 /* Pods-GardenBuddyUITests.debug.xcconfig */,
+				AFCE4476C8D87E19618BB9E8BE79B096 /* Pods-GardenBuddyUITests.release.xcconfig */,
+			);
+			name = "Pods-GardenBuddyUITests";
+			path = "Target Support Files/Pods-GardenBuddyUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2A43939C35A4F2AF29F793C3EC199B0D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F61E1383259D044C4BA8076564BD18 /* Pods-GardenBuddyUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36724799792C6CE8A1EAFEFC1E94DBF9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EDFF2F7CA7543836586FAB950B745DB /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		526DE112A560D2171F116A946DA76839 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F87A4BD269EF3AA31B0F1736D1A45B44 /* NSString+SmileSubstring.h in Headers */,
+				DB276619F6940CD262F05F80CE44E098 /* SmileClimacons.h in Headers */,
+				960127539A5E2CC07D24D389F13C5613 /* SmileLineLayout.h in Headers */,
+				48F4D2FAFC09A05C31BDE338B2CBEC5D /* SmileWeather-umbrella.h in Headers */,
+				3B72C648DF5562A3A39D81243CAD3CEF /* SmileWeatherCurrentData.h in Headers */,
+				5D7C0D55A94265239027D6F75F363059 /* SmileWeatherData.h in Headers */,
+				513546ADA9A3893A174F56B743190D4B /* SmileWeatherDemoVC.h in Headers */,
+				FE6A28B9A0C6637D828BE74BF211304C /* SmileWeatherDownLoader.h in Headers */,
+				CA285D2FAE4E225DDC7D8C0E848721F6 /* SmileWeatherForecastDayData.h in Headers */,
+				FFDF2B1A46A0E78EDA6E249DF5A07E15 /* SmileWeatherHourlyData.h in Headers */,
+				36B4DCDF742A8A667ABBD1785DC555BD /* SmileWeatherOneDayData.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BA6245D1DC0F438424552D681D5FBCB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5F3BF1F6A424BE755CFD29E826A12B5 /* Pods-GardenBuddyTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62771847CB003A914DF8E58662425C1D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B9F089564E5F4BA1997361D8DD4057D /* NSDate+Difference.h in Headers */,
+				76A04BB5F2F303525946CD2B1E140795 /* THCalendarDatePicker-umbrella.h in Headers */,
+				A97F50AC7D81A35910A41E8DC1555038 /* THDateDay.h in Headers */,
+				2E9C648DFEF7844363F7BB5A467FE849 /* THDatePickerViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87D0C3B8BA1ED4A0018B88FB46097FE3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				734E6304D8C162FCE59D98A5903BCECE /* KNSemiModalViewController_hons82-umbrella.h in Headers */,
+				0CC065D950865F2E18D9A9726D253DFD /* UIViewController+KNSemiModal.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DED2E723543759CEC79FC0751A85923F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA099090798214E60F29BCBC2E51C724 /* Pods-GardenBuddy-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		03EBF89C0AFC28B6C085924207591FD4 /* Pods-GardenBuddyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A174F1BABA5DD3F87800E01A9BEDD9A /* Build configuration list for PBXNativeTarget "Pods-GardenBuddyUITests" */;
+			buildPhases = (
+				9AA0C774B50FF2BB58C933FC43E51D54 /* Sources */,
+				FF0A6478AD301A5D1700BC6909FB9563 /* Frameworks */,
+				2A43939C35A4F2AF29F793C3EC199B0D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GardenBuddyUITests";
+			productName = "Pods-GardenBuddyUITests";
+			productReference = 1D782BDF4692A1FF54605EE3B0D786A2 /* Pods_GardenBuddyUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1892213B8242D18974553DCC80A3C3FB /* KNSemiModalViewController_hons82 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48E611F6A4DF6B2F2E5650DF46233DA7 /* Build configuration list for PBXNativeTarget "KNSemiModalViewController_hons82" */;
+			buildPhases = (
+				768897713C5D76B87C19A9296CE57183 /* Sources */,
+				A8C3B032E58E4EB1358747C10DC1493B /* Frameworks */,
+				87D0C3B8BA1ED4A0018B88FB46097FE3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KNSemiModalViewController_hons82;
+			productName = KNSemiModalViewController_hons82;
+			productReference = F21160DE6EAF4782A70B99E6F64C6A2C /* KNSemiModalViewController_hons82.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1B9B7E7CEFFB17C0F5B8037EF43A0622 /* Pods-GardenBuddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCD8A418169B5F47CB9BFE9733ED6D35 /* Build configuration list for PBXNativeTarget "Pods-GardenBuddy" */;
+			buildPhases = (
+				00A4F3410187093CFA36E5769A4ADA53 /* Sources */,
+				D1510AE64F02C047ACF7932D5753D947 /* Frameworks */,
+				DED2E723543759CEC79FC0751A85923F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E60AA8EBC11FF61DB06CB61F79E4318D /* PBXTargetDependency */,
+				47663D103DF548BE643E43BD7129F389 /* PBXTargetDependency */,
+				869EC86F537840ECBBB7A38945AC16CA /* PBXTargetDependency */,
+				936B1D2248C16E9D5652C23FC2A9F104 /* PBXTargetDependency */,
+			);
+			name = "Pods-GardenBuddy";
+			productName = "Pods-GardenBuddy";
+			productReference = CCD3E38C1928FFC4886100CE70FB0A65 /* Pods_GardenBuddy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		65EE5D187CA93F553F45F45DF9E01479 /* Pods-GardenBuddyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA571312B1F60851212E4AC54C09877A /* Build configuration list for PBXNativeTarget "Pods-GardenBuddyTests" */;
+			buildPhases = (
+				9CFEA5702BFD60142C35CB2185FE039E /* Sources */,
+				2DA2430EC5468FE0694F22DA445F54F3 /* Frameworks */,
+				5BA6245D1DC0F438424552D681D5FBCB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GardenBuddyTests";
+			productName = "Pods-GardenBuddyTests";
+			productReference = E1F5D821D92D4B69DD2DC7C4C6266296 /* Pods_GardenBuddyTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7A0126816B17965EB8FA57406596CB4D /* SmileWeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CFC3065FD0F8E307C41CD17F294BA07 /* Build configuration list for PBXNativeTarget "SmileWeather" */;
+			buildPhases = (
+				48EA29337B1EA5B405E405FB432AB8ED /* Sources */,
+				08C027E2E05424F0ED8BF78E549977E2 /* Frameworks */,
+				526DE112A560D2171F116A946DA76839 /* Headers */,
+				A25A8A099C4CEB1CFBE73C097733D218 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmileWeather;
+			productName = SmileWeather;
+			productReference = 7BB5A7B012592355632BFB072E0628E0 /* SmileWeather.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		855ADC9013314ACBECE8D77A042C6BB4 /* THCalendarDatePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73DA5EB50A0B646FD5FF06DD55709529 /* Build configuration list for PBXNativeTarget "THCalendarDatePicker" */;
+			buildPhases = (
+				E8FC21B4C93356627DA8A82A009D8EE9 /* Sources */,
+				B225893A48FED46EB2B47BF4FDF87FF3 /* Frameworks */,
+				62771847CB003A914DF8E58662425C1D /* Headers */,
+				152DE7601B264B6EFC67A183221B449A /* Copy . Public Headers */,
+				09D954CE820351B0C0EED6F475BC7BC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECBD6A1B82EFE56FE8977231BB5F3311 /* PBXTargetDependency */,
+			);
+			name = THCalendarDatePicker;
+			productName = THCalendarDatePicker;
+			productReference = CD8FBC6944E4091F3E441CF66DBFA181 /* THCalendarDatePicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C9518A9F32FAC5C8205B4D7BE245166C /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCB9662F34A81DDF6A43AB6B4A9E802C /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				7A4F5BF825C71EF256E5C3B1826E6664 /* Sources */,
+				A0FF89E27463B687A209FC668151D0EE /* Frameworks */,
+				36724799792C6CE8A1EAFEFC1E94DBF9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = CC928ABEC8908DAD2E44DD5CFD507246 /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 6B566FCFF93A6C03353E40F7CA8CC3C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1892213B8242D18974553DCC80A3C3FB /* KNSemiModalViewController_hons82 */,
+				1B9B7E7CEFFB17C0F5B8037EF43A0622 /* Pods-GardenBuddy */,
+				65EE5D187CA93F553F45F45DF9E01479 /* Pods-GardenBuddyTests */,
+				03EBF89C0AFC28B6C085924207591FD4 /* Pods-GardenBuddyUITests */,
+				7A0126816B17965EB8FA57406596CB4D /* SmileWeather */,
+				C9518A9F32FAC5C8205B4D7BE245166C /* SwiftyJSON */,
+				855ADC9013314ACBECE8D77A042C6BB4 /* THCalendarDatePicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09D954CE820351B0C0EED6F475BC7BC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D53E75B6268EECE3E8EE72CBB6FE3611 /* Images.xcassets in Resources */,
+				8CB028D403A3620FC2C6A600EFF38DD6 /* THDateDay.xib in Resources */,
+				BD3DA1AD84ABDB6C577EE123612DF665 /* THDatePickerViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A25A8A099C4CEB1CFBE73C097733D218 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA4603A964277B5BE36F05964EAD9838 /* Climacons.ttf in Resources */,
+				B69503325DC5DC0987D7C11B9BCFFF22 /* smile_drop@2x.png in Resources */,
+				8BC229F3B3C70F2A8DA555292A863FE9 /* smile_drop@3x.png in Resources */,
+				AE04B6F772CD12956E88A422952E1020 /* smile_openweather_logo@2x.png in Resources */,
+				C193967A283442BA90C77C7DC7ABACC1 /* smile_openweather_logo@3x.png in Resources */,
+				16286C0F8A2924589D30B3ADBCF89F3A /* smile_pressure@2x.png in Resources */,
+				2C2C262244C2D9E500825E7E9A00D8CA /* smile_pressure@3x.png in Resources */,
+				177CA0E35C47AFB571C43013685DDD13 /* smile_sunglass@2x.png in Resources */,
+				108A6E78CF485F63FE10D22075F86E24 /* smile_sunglass@3x.png in Resources */,
+				637D36C7D25346FC077E443D8C8B4C5C /* smile_sunrise@2x.png in Resources */,
+				C87B9162D97F39B17744165485A39B84 /* smile_sunrise@3x.png in Resources */,
+				A1C9664585F65BAEC04467D6EB3E4066 /* smile_sunset@2x.png in Resources */,
+				BDE59215C76EEE214501D583B8D4C493 /* smile_sunset@3x.png in Resources */,
+				00F65B41DDCDCB3F75B80178042D95FE /* smile_umbrella@2x.png in Resources */,
+				333FCE1A18E51B829AC9CE5E76AF2048 /* smile_umbrella@3x.png in Resources */,
+				C952EA5E6C3800291DCE8BF6710AB639 /* smile_wind@2x.png in Resources */,
+				386142E963A55F2DFCF9F706D9C48B70 /* smile_wind@3x.png in Resources */,
+				18228AA8762E71826987C5DB87FBD573 /* smile_wunder_logo@2x.png in Resources */,
+				436C61F7114585C6D878F76CB304DEB6 /* smile_wunder_logo@3x.png in Resources */,
+				F41EBB8553298CD952283F321D43136D /* SmileWeatherDemoView.xib in Resources */,
+				F8CB4DC93227A5CEBBC1F3F5BD7DDC7D /* SmileWeatherForecastCell.xib in Resources */,
+				D5C40E702EAD3367D3E8E71D43FD78D6 /* SmileWeatherHourlyCell.xib in Resources */,
+				8F5775019A51351449630F7A9DF2CDC9 /* SmileWeatherPropertyCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00A4F3410187093CFA36E5769A4ADA53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC78F9196D20E658BC026A55A3702521 /* Pods-GardenBuddy-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48EA29337B1EA5B405E405FB432AB8ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BE781CBC99427F6EBFC2C58088DF614 /* NSString+SmileSubstring.m in Sources */,
+				3EE3EA35AE225F4175527E9CA0BB2245 /* SmileLineLayout.m in Sources */,
+				D6F500761421B4380140C238E3F1CC62 /* SmileWeather-dummy.m in Sources */,
+				5BD20399347E1867C4DC387115C8398A /* SmileWeatherCurrentData.m in Sources */,
+				867CBA8C132D8B584D3D217B776F09A1 /* SmileWeatherData.m in Sources */,
+				A38C1ABF9A5F9E5BD7BA12BDF96B1F08 /* SmileWeatherDemoVC.m in Sources */,
+				B76430BAC9B07481EA84D34DC49B22DE /* SmileWeatherDownLoader.m in Sources */,
+				AADA59C39C9228E87B529D64A38F94C5 /* SmileWeatherForecastDayData.m in Sources */,
+				5519DAF7E7DA344AA3A3098E051BE913 /* SmileWeatherHourlyData.m in Sources */,
+				8F9D486D6AF4F8EB2DFC318710A33AED /* SmileWeatherOneDayData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		768897713C5D76B87C19A9296CE57183 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DEE6F0E34C5586DA5FA73276AAEE78B /* KNSemiModalViewController_hons82-dummy.m in Sources */,
+				8163A60362E461710D7B192CA81C9FB3 /* UIViewController+KNSemiModal.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A4F5BF825C71EF256E5C3B1826E6664 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60A2877B193EB8A941EB2A821FAD38BB /* SwiftyJSON-dummy.m in Sources */,
+				2568F8D8BD0354FA1ADD9B3CDA4394CD /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AA0C774B50FF2BB58C933FC43E51D54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7ACB76C6A3CE7FC4D0C2EB8BF7CC09E /* Pods-GardenBuddyUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CFEA5702BFD60142C35CB2185FE039E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7235EE12856D1BC800AD79810B6DAF47 /* Pods-GardenBuddyTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8FC21B4C93356627DA8A82A009D8EE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				778F9133366B2BB4BD30BC569E0EDE72 /* NSDate+Difference.m in Sources */,
+				2F28EDE79C2D182991AF5A6D7FABE453 /* THCalendarDatePicker-dummy.m in Sources */,
+				3B575B95222F286FE8BA4399FA445E1A /* THDateDay.m in Sources */,
+				632D63C633B688F285B71D72C89B764E /* THDatePickerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		47663D103DF548BE643E43BD7129F389 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SmileWeather;
+			target = 7A0126816B17965EB8FA57406596CB4D /* SmileWeather */;
+			targetProxy = CF29828BBD14B5C2B6831A1BF26D7E20 /* PBXContainerItemProxy */;
+		};
+		869EC86F537840ECBBB7A38945AC16CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = C9518A9F32FAC5C8205B4D7BE245166C /* SwiftyJSON */;
+			targetProxy = C8CCE2A6EA1ACF85FDA53525BA2F1F14 /* PBXContainerItemProxy */;
+		};
+		936B1D2248C16E9D5652C23FC2A9F104 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = THCalendarDatePicker;
+			target = 855ADC9013314ACBECE8D77A042C6BB4 /* THCalendarDatePicker */;
+			targetProxy = 9C4717A9F90610C7E626F655E14ED863 /* PBXContainerItemProxy */;
+		};
+		E60AA8EBC11FF61DB06CB61F79E4318D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KNSemiModalViewController_hons82;
+			target = 1892213B8242D18974553DCC80A3C3FB /* KNSemiModalViewController_hons82 */;
+			targetProxy = DF6A477161501AE6E2E660A0CD9D442D /* PBXContainerItemProxy */;
+		};
+		ECBD6A1B82EFE56FE8977231BB5F3311 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KNSemiModalViewController_hons82;
+			target = 1892213B8242D18974553DCC80A3C3FB /* KNSemiModalViewController_hons82 */;
+			targetProxy = 73565D702B32972B385A6148379000CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1BF9F0D1973C19D59950711C537919DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49DF7E5D80BD8999D399B55193A96E3C /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3D40512D9B95D5BE2B1C1D0E16A2B42E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24B9016AC6FD022A24D9AB5A87B25094 /* SmileWeather.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SmileWeather/SmileWeather-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SmileWeather/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SmileWeather/SmileWeather.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SmileWeather;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4567A4BBE2DB8AEAF41F36976F3A5F2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F910C551C167896B06C1CC5A478E3942 /* KNSemiModalViewController_hons82.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KNSemiModalViewController_hons82/KNSemiModalViewController_hons82-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KNSemiModalViewController_hons82/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KNSemiModalViewController_hons82/KNSemiModalViewController_hons82.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = KNSemiModalViewController_hons82;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		50E4C32A304ECA2E566A4DD5162E9FCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EFB3EF89A55A18FCD0271ED3B0C9243 /* THCalendarDatePicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/THCalendarDatePicker/THCalendarDatePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/THCalendarDatePicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/THCalendarDatePicker/THCalendarDatePicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = THCalendarDatePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		55561C2BA901083E013A3FC47E539127 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68D54DBC1425815F08509854FB4934E7 /* Pods-GardenBuddyUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GardenBuddyUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GardenBuddyUITests/Pods-GardenBuddyUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GardenBuddyUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		89C7F49F78FD57E4E099ACAD9321BDA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49DF7E5D80BD8999D399B55193A96E3C /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9B7A35B28CA5B80FBC459AAB8B5C6A00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 404ADE11323971E8B55E9F584895A0E6 /* Pods-GardenBuddyTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GardenBuddyTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GardenBuddyTests/Pods-GardenBuddyTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GardenBuddyTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AA4C7EC278FF7F7255214C139CD95E23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADFDA252507D4393CD21496E40F42AB1 /* Pods-GardenBuddyTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GardenBuddyTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GardenBuddyTests/Pods-GardenBuddyTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GardenBuddyTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BEE49E02E79833B7CE0520D2C7EC1450 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEEE41D108E8F5DB2716983F4DAB504B /* Pods-GardenBuddy.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GardenBuddy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GardenBuddy/Pods-GardenBuddy.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GardenBuddy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C23FD027897B5CB93B22A1797B839B30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 156DF4A234F2B00631A7488F013CED20 /* Pods-GardenBuddy.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GardenBuddy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GardenBuddy/Pods-GardenBuddy.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GardenBuddy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C5517403D3306F95D9455F5A986EFCFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFCE4476C8D87E19618BB9E8BE79B096 /* Pods-GardenBuddyUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GardenBuddyUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GardenBuddyUITests/Pods-GardenBuddyUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GardenBuddyUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CB248C8431B2D91EC11667C4506963A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EFB3EF89A55A18FCD0271ED3B0C9243 /* THCalendarDatePicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/THCalendarDatePicker/THCalendarDatePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/THCalendarDatePicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/THCalendarDatePicker/THCalendarDatePicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = THCalendarDatePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E4DB4DD20E1DF032AB88F28DD48C954A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24B9016AC6FD022A24D9AB5A87B25094 /* SmileWeather.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SmileWeather/SmileWeather-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SmileWeather/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SmileWeather/SmileWeather.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SmileWeather;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F84C493853A7DBF70E803921F7AC395B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F910C551C167896B06C1CC5A478E3942 /* KNSemiModalViewController_hons82.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KNSemiModalViewController_hons82/KNSemiModalViewController_hons82-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KNSemiModalViewController_hons82/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KNSemiModalViewController_hons82/KNSemiModalViewController_hons82.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = KNSemiModalViewController_hons82;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */,
+				3FA451D268613890FA8A5A03801E11D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48E611F6A4DF6B2F2E5650DF46233DA7 /* Build configuration list for PBXNativeTarget "KNSemiModalViewController_hons82" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F84C493853A7DBF70E803921F7AC395B /* Debug */,
+				4567A4BBE2DB8AEAF41F36976F3A5F2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73DA5EB50A0B646FD5FF06DD55709529 /* Build configuration list for PBXNativeTarget "THCalendarDatePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB248C8431B2D91EC11667C4506963A0 /* Debug */,
+				50E4C32A304ECA2E566A4DD5162E9FCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CFC3065FD0F8E307C41CD17F294BA07 /* Build configuration list for PBXNativeTarget "SmileWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D40512D9B95D5BE2B1C1D0E16A2B42E /* Debug */,
+				E4DB4DD20E1DF032AB88F28DD48C954A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A174F1BABA5DD3F87800E01A9BEDD9A /* Build configuration list for PBXNativeTarget "Pods-GardenBuddyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55561C2BA901083E013A3FC47E539127 /* Debug */,
+				C5517403D3306F95D9455F5A986EFCFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCB9662F34A81DDF6A43AB6B4A9E802C /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89C7F49F78FD57E4E099ACAD9321BDA9 /* Debug */,
+				1BF9F0D1973C19D59950711C537919DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCD8A418169B5F47CB9BFE9733ED6D35 /* Build configuration list for PBXNativeTarget "Pods-GardenBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEE49E02E79833B7CE0520D2C7EC1450 /* Debug */,
+				C23FD027897B5CB93B22A1797B839B30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA571312B1F60851212E4AC54C09877A /* Build configuration list for PBXNativeTarget "Pods-GardenBuddyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA4C7EC278FF7F7255214C139CD95E23 /* Debug */,
+				9B7A35B28CA5B80FBC459AAB8B5C6A00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -10,12 +10,26 @@ import UIKit
 
 class PlantDetailViewController: UIViewController {
 
+    @IBOutlet weak var dateButton: UIButton!
+    @IBOutlet weak var lastWatered: UIButton!
+    var curDate : NSDate = NSDate()
+    var lastWateredDate : NSDate = NSDate()
+    
+    lazy var formatter: NSDateFormatter = {
+        var tmpFormatter = NSDateFormatter()
+        tmpFormatter.dateFormat = "dd/MM/yyyy --- HH:mm"
+        return tmpFormatter
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
-       let cancelButton = UIBarButtonItem(barButtonSystemItem: .Cancel, target: self, action: #selector(cancel(_:)))
+       let cancelButton = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: #selector(cancel(_:)))
         self.navigationItem.leftBarButtonItem = cancelButton
+        //refreshTitle()
+        setupView()
+        print(curDate)
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,6 +37,10 @@ class PlantDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    func setupView() {
+        self.view.backgroundColor = bgColorCode
+    }
 
     /*
     // MARK: - Navigation
