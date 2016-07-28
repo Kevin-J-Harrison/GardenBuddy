@@ -80,6 +80,13 @@ class GardenViewController: UITableViewController {
         cell.textLabel!.text = self.myGarden[indexPath.section][indexPath.row].type
         cell.detailTextLabel!.text = "\(self.myGarden[indexPath.section][indexPath.row].daysSinceWatered())"
         cell.backgroundColor = self.myGarden[indexPath.section][indexPath.row].getCellColor()
+        if self.myGarden[indexPath.section][indexPath.row].vegetable {
+            cell.imageView?.image = UIImage(named: "veggie")
+        }
+        else {
+            cell.imageView?.image = UIImage(named: "myGarden")
+        }
+        
         return cell
     }
     
