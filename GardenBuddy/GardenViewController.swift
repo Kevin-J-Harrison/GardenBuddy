@@ -25,6 +25,9 @@ class GardenViewController: UITableViewController {
         let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(insertNewObject(_:)))
         self.navigationItem.rightBarButtonItem = addButton
         self.tableView.backgroundColor = bgColorCode
+        
+        
+        
         self.myGarden = [myVegetables, myPlants]
         self.ref = FIRDatabase.database().reference()
     }
